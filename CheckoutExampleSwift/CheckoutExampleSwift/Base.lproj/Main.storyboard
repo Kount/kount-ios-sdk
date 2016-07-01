@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CheckoutExampleSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dFU-Z8-nIV">
+                                <rect key="frame" x="238" y="547" width="124" height="33"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <state key="normal" title="Checkout Page"/>
+                                <connections>
+                                    <segue destination="kbh-tW-xPJ" kind="presentation" identifier="Checkout" id="9gQ-VY-JJ5"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Merchant ID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jlu-cp-t59">
+                                <rect key="frame" x="20" y="40" width="94" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Environment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i0X-YS-qTY">
+                                <rect key="frame" x="20" y="81" width="96" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="000000" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TrM-SP-IlW">
+                                <rect key="frame" x="122" y="40" width="458" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ENV" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e5R-IM-BfM">
+                                <rect key="frame" x="546" y="81" width="34" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="TrM-SP-IlW" firstAttribute="leading" secondItem="jlu-cp-t59" secondAttribute="trailing" constant="8" symbolic="YES" id="0nD-M8-jML"/>
+                            <constraint firstItem="i0X-YS-qTY" firstAttribute="top" secondItem="jlu-cp-t59" secondAttribute="bottom" constant="20" id="5wx-rh-JZi"/>
+                            <constraint firstItem="jlu-cp-t59" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Q6N-9n-YcW"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="dFU-Z8-nIV" secondAttribute="bottom" constant="20" id="UsO-1H-tNB"/>
+                            <constraint firstItem="TrM-SP-IlW" firstAttribute="trailing" secondItem="e5R-IM-BfM" secondAttribute="trailing" id="WTL-Bn-0AR"/>
+                            <constraint firstItem="TrM-SP-IlW" firstAttribute="baseline" secondItem="jlu-cp-t59" secondAttribute="baseline" id="Xzg-CR-Sqm"/>
+                            <constraint firstItem="dFU-Z8-nIV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aGd-yd-V8N"/>
+                            <constraint firstItem="i0X-YS-qTY" firstAttribute="leading" secondItem="jlu-cp-t59" secondAttribute="leading" id="fxC-Vp-9dZ"/>
+                            <constraint firstItem="e5R-IM-BfM" firstAttribute="baseline" secondItem="i0X-YS-qTY" secondAttribute="baseline" id="gMt-1a-GDk"/>
+                            <constraint firstItem="TrM-SP-IlW" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="r6W-BF-ax2"/>
+                            <constraint firstItem="TrM-SP-IlW" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="zxn-NQ-AN7"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="environment" destination="e5R-IM-BfM" id="7D2-Fy-Sgg"/>
+                        <outlet property="merchant" destination="TrM-SP-IlW" id="MpW-MY-mLR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="451" y="273"/>
+        </scene>
+        <!--Checkout Page-->
+        <scene sceneID="Mu4-CD-Kvc">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="KQg-EX-kBM" customClass="CheckoutViewController" customModule="CheckoutExampleSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bWQ-OM-vRd"/>
+                        <viewControllerLayoutGuide type="bottom" id="yh2-xZ-3mx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="oeK-jy-FdE">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mxv-2Q-OKO">
+                                <rect key="frame" x="20" y="72" width="560" height="520"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="mxv-2Q-OKO" firstAttribute="leading" secondItem="oeK-jy-FdE" secondAttribute="leadingMargin" id="9hA-qT-P0O"/>
+                            <constraint firstItem="yh2-xZ-3mx" firstAttribute="top" secondItem="mxv-2Q-OKO" secondAttribute="bottom" constant="8" symbolic="YES" id="JVG-24-Bjd"/>
+                            <constraint firstItem="mxv-2Q-OKO" firstAttribute="trailing" secondItem="oeK-jy-FdE" secondAttribute="trailingMargin" id="Yzt-Ns-ghj"/>
+                            <constraint firstItem="mxv-2Q-OKO" firstAttribute="top" secondItem="bWQ-OM-vRd" secondAttribute="bottom" constant="8" id="eCo-lC-8Ij"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Checkout Page" id="Of0-wj-ReT">
+                        <barButtonItem key="rightBarButtonItem" title="Done" style="done" id="X7g-zC-Bga">
+                            <connections>
+                                <action selector="done:" destination="KQg-EX-kBM" id="WVr-zG-SXB"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="textView" destination="mxv-2Q-OKO" id="gEX-jj-3v0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XZz-yk-KDq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1837" y="273"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Fz6-Zz-6zA">
+            <objects>
+                <navigationController id="kbh-tW-xPJ" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="eAD-oX-N95">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="KQg-EX-kBM" kind="relationship" relationship="rootViewController" id="GqL-WE-P8M"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wVv-Tr-2s8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1114" y="273"/>
+        </scene>
+    </scenes>
+</document>
