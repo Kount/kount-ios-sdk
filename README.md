@@ -22,7 +22,7 @@ Modify your build settings **App Target** &gt; **Build Settings**.
 Update Header Search Paths:
 -   Add `$(PROJECT_DIR)/KountDataCollector`
 
-## Initialization
+#### Initialization
 
 To set up the data collector, you'll need to set the merchant ID,
 configuration for location collection, and the Kount environment. While
@@ -91,24 +91,25 @@ add the following:
   [[KDataCollector sharedCollector] collectForSession:<SESSION_ID> 
                                            completion:^(NSString * _Nonnull sessionID,  
                                                         BOOL success, 
-                                               // Add handler code here if desired. The completion block is optional.         NSError * _Nullable error) {
+                                                        NSError * _Nullable error) {
     // Add handler code here if desired. The completion block is optional.
   }];
   ...
 }
-```// Add handler code here if desireQ// Add handler code here if desired. The completion block is optional.// Add handler code here if desired. The completion block is optional.// Add handler code here if desired. The completion block is optional.d. The completion block is optional.		// Add handler code here if desired. The completion block is optional.// Add handler code here if desired. The completion block is optional.// Add handler code here if desired. The completion block is optional.// Add handler code here if desired. The completion block is optional.// Add handler code here if desired. The completion block is optional.
+```
 
 ##### Swift:
 
 ``` 
 override func viewDidAppear(animated: Bool) {
   ...
-        KDataCollector.sharedCollector().collectForSession(<SESSION_ID>) { (sessionID, success, error) in
+        KDataCollector.shared().collect(forSession: <SESSION_ID>) { (sessionID, success, error) in
             // Add handler code here if desired. The completion block is optional.
         }
   ...
 }
 ```
+
 ## Examples
 
 Open `Examples.xcworkspace` in Xcode to open up the workspace with the following example projects:
