@@ -50,11 +50,11 @@ In your AppDelegate add the initialization code:
 ##### Swift:
 
 ``` 
-func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
   ...
-        KDataCollector.sharedCollector().merchantID = <MERCHANT_ID>
-        KDataCollector.sharedCollector().locationCollectorConfig = KLocationCollectorConfig.RequestPermission
-        KDataCollector.sharedCollector().environment = KEnvironment.Test
+        KDataCollector.shared().merchantID = <MERCHANT_ID>
+        KDataCollector.shared().locationCollectorConfig = KLocationCollectorConfig.requestPermission
+        KDataCollector.shared().environment = KEnvironment.test
   ...
 }
 ```
