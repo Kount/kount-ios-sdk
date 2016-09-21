@@ -5,17 +5,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-    func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
         //// Configure the Data Collector
         //
-        KDataCollector.sharedCollector().debug = true
+        KDataCollector.shared().debug = true
         // TODO Set your Merchant ID
-        KDataCollector.sharedCollector().merchantID = 0 // Insert your valid merchant ID
+        KDataCollector.shared().merchantID = 0 // Insert your valid merchant ID
         // TODO Set the location collection configuration
-        KDataCollector.sharedCollector().locationCollectorConfig = KLocationCollectorConfig.RequestPermission
+        KDataCollector.shared().locationCollectorConfig = KLocationCollectorConfig.requestPermission
         // For a released app, you'll want to set this to KEnvironment.Production
-        KDataCollector.sharedCollector().environment = KEnvironment.Test
+        KDataCollector.shared().environment = KEnvironment.test
         
         return true
     }

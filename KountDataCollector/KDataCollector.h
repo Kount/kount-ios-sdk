@@ -58,8 +58,8 @@ typedef NS_ENUM(NSInteger, KEnvironment) {
     // Test Environment
     KEnvironmentTest,
     
-    // Productoin Environment
-    KEnvironmentProduction,        
+    // Production Environment
+    KEnvironmentProduction,
 };
 
 // KDataCollector enables you to collect device information for the given session

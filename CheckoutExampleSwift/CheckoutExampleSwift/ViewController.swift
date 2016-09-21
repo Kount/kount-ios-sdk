@@ -8,25 +8,25 @@ class ViewController: UIViewController, CheckoutViewControllerDelegate  {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        merchant!.text = String(format:"%ld", KDataCollector.sharedCollector().merchantID)
+        merchant!.text = String(format:"%ld", KDataCollector.shared().merchantID)
         
-        switch KDataCollector.sharedCollector().environment {
-        case KEnvironment.Test:
+        switch KDataCollector.shared().environment {
+        case KEnvironment.test:
             environment!.text = "Test"
-        case KEnvironment.Production:
+        case KEnvironment.production:
             environment!.text = "Production"
         default:
             environment!.text = "Unknown"
         }
     }
 
-    func didFinish(sender: CheckoutViewController) {
-        self.dismissViewControllerAnimated(true, completion: nil)
+    func didFinish(_ sender: CheckoutViewController) {
+        self.dismiss(animated: true, completion: nil)
     }
 
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "Checkout" {
-            let navigationController = segue.destinationViewController
+            let navigationController = segue.destination
             let controller :CheckoutViewController = navigationController.childViewControllers[0] as! CheckoutViewController
             controller.delegate = self
         }
