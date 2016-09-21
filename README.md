@@ -22,7 +22,7 @@ Modify your build settings **App Target** &gt; **Build Settings**.
 Update Header Search Paths:
 -   Add `$(PROJECT_DIR)/KountDataCollector`
 
-#### Initialization
+## Initialization
 
 To set up the data collector, you'll need to set the merchant ID,
 configuration for location collection, and the Kount environment. While
