@@ -42,7 +42,10 @@ In your AppDelegate add the initialization code:
   ...
   [[KDataCollector sharedCollector] setMerchantID:<MERCHANT_ID>]; 
   [[KDataCollector sharedCollector] setLocationCollectorConfig:KLocationCollectorConfigRequestPermission];
+  // For Test Environment
   [[KDataCollector sharedCollector] setEnvironment:KEnvironmentTest];
+  // For Production Environment
+  [[KDataCollector sharedCollector] setEnvironment:KEnvironmentProduction];
   ...
 }
 ```
@@ -54,7 +57,10 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
   ...
         KDataCollector.shared().merchantID = <MERCHANT_ID>
         KDataCollector.shared().locationCollectorConfig = KLocationCollectorConfig.requestPermission
-        KDataCollector.shared().environment = KEnvironment.test
+        // For test Environment
+	KDataCollector.shared().environment = KEnvironment.test
+        // For Production Environment
+	KDataCollector.shared().environment = KEnvironment.production
   ...
 }
 ```
