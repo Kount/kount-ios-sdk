@@ -5,6 +5,7 @@
 * Resolved Invalid address exception in KCollectorTaskBase
 * Resolved Locale reporting information
 * Added performance improvements
+* Minor updates to keep up to date with XCode
 
 ## 3.1
 * Updated SDK in preparation for future enhancements. No coding interface changes implemented, completely compatible with established 3.0 integrations.
