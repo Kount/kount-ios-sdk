@@ -8,6 +8,12 @@ Enhancements to the iOS SDK for Kount customers including:
 * iOS 13 updates
 * Security and Bug fixes
 
+Kount's iOS SDK is compatible with:
+* Minumum Version of iOS in application: 
+* Recommended Target Version of iOS in application:
+* Tested on the following iOS OS Versions:
+  * ???
+
 ## 3.2 
 * Resolved Failure to deallocate CLLocationManager
 * Resolved Invalid address exception in KCollectorTaskBase
