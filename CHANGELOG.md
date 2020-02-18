@@ -1,5 +1,13 @@
 # iOS SDK Release Notes
 
+## 4.0.0
+
+Enhancements to the iOS SDK for Kount customers including:
+* City Level location information
+* Enhanced timing metrics
+* iOS 13 updates
+* Security and Bug fixes
+
 ## 3.2 
 * Resolved Failure to deallocate CLLocationManager
 * Resolved Invalid address exception in KCollectorTaskBase
