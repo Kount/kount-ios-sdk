@@ -136,28 +136,3 @@ A simple example of using the SDK in an Objective C project.
 ### CheckoutExampleSwift
 
 A simple example of using the SDK in a Swift project.
-
-## Migrating to version 3.x
-
-The interface and workflow of the SDK has changed between version 2 and
-version 3. The old version would have you create an instance of the Data
-Collector, configure it, make a call to collect, and then implement the
-delegate methods if you wished to receive feedback regarding the
-collection.
-
-With the new version, the Data Collector is implemented as a singleton
-and is configured when your app is created. The collect call is now a
-method on the Data Collector singleton and has an optional callback
-block you can implement if you wish to get additional information on the
-collection. Here are the steps to upgrade to version 3.x:
-
--   Remove the old library and header file from your project and replace
-    it with the new library and header file.
--   Remove the old initialization code and replace it with the new
-    initialization code methods on the DataCollector singleton in
-    your AppDelegate.
--   Remove the old call to collect and corresponding delegate methods
-    and replace it with the collect method on the DataCollector
-    singleton, and optionally implement the completion block.
--   Be certain that the call to collect is made at the beginning of 
-    the checkout process. 
