@@ -1,23 +1,9 @@
 # iOS SDK Release Notes
 
-## 3.2 
+## 4.0.1
 
-* Resolved Failure to deallocate CLLocationManager
-* Resolved Invalid address exception in KCollectorTaskBase
-* Resolved Locale reporting information
-* Added performance improvements
-* Minor updates to keep up to date with XCode
-
-## 3.1
-
-* Updated SDK in preparation for future enhancements. No coding interface changes implemented, completely compatible with established 3.0 integrations.
-* Tested with iOS 10
-* Bumped deployment target to iOS 8.0+
-
-## 3.0
-
-* Updated SDK with more intuitive configuration and collection
-* Improved collection capabilities
+* Changed Library to a Universal Debug Library to support other platforms like x86 for testing
+* Updated Readme documentation for new XCode header changes in swift.
 
 ## 4.0
 
@@ -39,7 +25,21 @@ Tested on the following iOS OS Versions:
 * 13.2
 * 13.2.3
 
-## 4.0.1
+## 3.2
 
-* Changed Library to a Universal Debug Library to support other platforms like x86 for testing
-* Updated Readme documentation for new XCode header changes in swift.
+* Resolved Failure to deallocate CLLocationManager
+* Resolved Invalid address exception in KCollectorTaskBase
+* Resolved Locale reporting information
+* Added performance improvements
+* Minor updates to keep up to date with XCode
+
+## 3.1
+
+* Updated SDK in preparation for future enhancements. No coding interface changes implemented, completely compatible with established 3.0 integrations.
+* Tested with iOS 10
+* Bumped deployment target to iOS 8.0+
+
+## 3.0
+
+* Updated SDK with more intuitive configuration and collection
+* Improved collection capabilities
