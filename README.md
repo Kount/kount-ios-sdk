@@ -33,7 +33,7 @@ switching to *Production* when your app is ready to release.
 
 In your AppDelegate add the initialization code:
 
-##### Objective-C
+#### Objective-C
 
 ``` 
 #import "KDataCollector.h"
@@ -50,7 +50,7 @@ In your AppDelegate add the initialization code:
 }
 ```
 
-##### Swift:
+#### Swift:
 
 ``` 
 func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
@@ -64,6 +64,21 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
   ...
 }
 ```
+
+##### Swift Error: Bridging headers are not allowed in Frameworks.
+
+Recent Xcode changes altered the way to pull in ObjectiveC libraries in Swift.  the older bridging header file is no longer supported.  Instead, an umbrella file should be used. The Swift code will be able to access everything from objc that is included in the public umbrella header for your framework.
+ 
+In your umbrella header file, import every Objective-C header you want to expose to Swift. To achieve this, do the following:
+
+1. Remove your bridging header file.
+2. Remove references to the bridging header file in the build settings for the framework.
+3. Under Build Settings, in Packaging, make sure the Defines Module setting for the framework target is set to Yes.
+4. Add the necessary headers to your umbrella file ([ProductName].h)
+5. Make the included files public in the framework's "Headers" section of its "Build Phases".
+6. Clean and rebuild.
+
+Note: The "umbrella header file" is a file (named [ProductName].h) that generally represents all public headers of a framework. It is usually just a list of #import statements to other headers contained in the framework. Example: UIKit.h
 
 ### Location Permissions
 
@@ -80,7 +95,7 @@ will request permission for you if needed. If you choose
 `KLocationCollectorConfigPassive` the collector will only gather
 location information if your app has requested permission and the user has granted it permission.
 
-## Collection
+### Collection
 
 Early in the checkout process, start the data collection with a unique 
 session ID tied to the transaction, and collect once per unique session
@@ -96,7 +111,7 @@ checkout process.
 
 Below is an example adding the controller to the viewDidAppear method:
 
-##### Objective-C
+#### Objective-C
 
 ``` 
 #import "KDataCollector.h"
@@ -113,7 +128,7 @@ Below is an example adding the controller to the viewDidAppear method:
 }
 ```
 
-##### Swift:
+#### Swift:
 
 ``` 
 override func viewDidAppear(animated: Bool) {
