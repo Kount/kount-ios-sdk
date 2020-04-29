@@ -7,8 +7,8 @@ your iOS app.
 ## Requirements
 
 -   [Kount integration](http://www.kount.com/fraud-detection-software)
--   [Xcode 8 and iOS 10 SDK](https://developer.apple.com/xcode/download/)
--   iOS 8.0+ deployment target
+-   [Xcode 11 and iOS 9.3+ SDK](https://developer.apple.com/xcode/download/)
+-   iOS 9.3+ deployment target. (iOS 13 recommended)
 
 ## Installation
 
