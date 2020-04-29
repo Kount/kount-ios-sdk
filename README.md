@@ -20,7 +20,7 @@ In Finder, drag the KountDataCollector folder into the top level of your project
 check *Copy If Needed*.
 Modify your build settings **App Target** &gt; **Build Settings**.
 Update Header Search Paths:
--   Add `$(PROJECT_DIR)/KountDataCollector`
+- Add `$(PROJECT_DIR)/KountDataCollector`
 
 ## Initialization
 
@@ -29,11 +29,11 @@ configuration for location collection, and the Kount environment. While
 testing your integration you'll want to use the *Test* environment,
 switching to *Production* when your app is ready to release.
 
-### Setup
+## Setup
 
 In your AppDelegate add the initialization code:
 
-#### Objective-C
+### Objective-C
 
 ``` 
 #import "KDataCollector.h"
@@ -50,7 +50,7 @@ In your AppDelegate add the initialization code:
 }
 ```
 
-#### Swift:
+### Swift:
 
 ``` 
 func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
@@ -65,10 +65,25 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 }
 ```
 
-##### Swift Error: Bridging headers are not allowed in Frameworks.
+How you Import in swift is dependent on whether you are importing it directly into the app or into another framework. 
 
-Recent Xcode changes altered the way to pull in ObjectiveC libraries in Swift.  the older bridging header file is no longer supported.  Instead, an umbrella file should be used. The Swift code will be able to access everything from objc that is included in the public umbrella header for your framework.
- 
+#### Import Code Within an App Target
+
+To import a set of Objective-C files into Swift code within the same app target, you rely on an Objective-C bridging header file to expose those files to Swift. Xcode offers to create this header when you add a Swift file to an existing Objective-C app, or an Objective-C file to an existing Swift app.
+
+#### Import Code Within a Framework Target
+
+To use the Objective-C declarations in files in the same framework target as your Swift code, you’ll need to import those files into the Objective-C umbrella header—the master header for your framework. Import your Objective-C files by configuring the umbrella header:
+
+1. Under Build Settings, in Packaging, make sure the Defines Module setting for the framework target is set to Yes.
+2. In the umbrella header, import every Objective-C header you want to expose to Swift.
+
+#### Swift Error: Bridging headers are not allowed in Frameworks.
+
+NOTE: This shold only apply to clients who have setup the Data Collecter previously in their Swift app and then encountered the issue when updating their version of Xcode.
+
+Recent Xcode changes altered the way to pull in ObjectiveC libraries in Swift.  The older bridging header file is no longer supported.  Instead, an umbrella file should be used. The Swift code will be able to access everything from objc that is included in the public umbrella header for your framework.
+
 In your umbrella header file, import every Objective-C header you want to expose to Swift. To achieve this, do the following:
 
 1. Remove your bridging header file.
@@ -80,7 +95,7 @@ In your umbrella header file, import every Objective-C header you want to expose
 
 Note: The "umbrella header file" is a file (named [ProductName].h) that generally represents all public headers of a framework. It is usually just a list of #import statements to other headers contained in the framework. Example: UIKit.h
 
-### Location Permissions
+## Location Permissions
 
 For location collection support you'll need to add this key to your
 **Info.plist** file:
@@ -95,7 +110,7 @@ will request permission for you if needed. If you choose
 `KLocationCollectorConfigPassive` the collector will only gather
 location information if your app has requested permission and the user has granted it permission.
 
-### Collection
+## Collection
 
 Early in the checkout process, start the data collection with a unique 
 session ID tied to the transaction, and collect once per unique session
@@ -111,7 +126,7 @@ checkout process.
 
 Below is an example adding the controller to the viewDidAppear method:
 
-#### Objective-C
+### Objective-C
 
 ``` 
 #import "KDataCollector.h"
@@ -128,7 +143,7 @@ Below is an example adding the controller to the viewDidAppear method:
 }
 ```
 
-#### Swift:
+### Swift
 
 ``` 
 override func viewDidAppear(animated: Bool) {
