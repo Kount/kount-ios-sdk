@@ -65,11 +65,15 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 }
 ```
 
-How you Import in swift is dependent on whether you are importing it directly into the app or into another framework. 
+How you Import Objectinve C libraries in Swift is dependent on whether you are importing it directly into the app or into another framework. For more information on importing Objective C libraries in Swift: https://developer.apple.com/documentation/swift/imported_c_and_objective-c_apis/importing_objective-c_into_swift
+
+Instructions for the most common implementations for App Target and Framework Target are listed below:
 
 #### Import Code Within an App Target
 
 To import a set of Objective-C files into Swift code within the same app target, you rely on an Objective-C bridging header file to expose those files to Swift. Xcode offers to create this header when you add a Swift file to an existing Objective-C app, or an Objective-C file to an existing Swift app.
+
+NOTE:  If you receive the error: Bridging headers are not allowed in Frameworks, it is  most likely because you are attempting to import as an App Target and not a Framework Target.  You should switch to the Framework Target style of importing below instead.
 
 #### Import Code Within a Framework Target
 
@@ -77,23 +81,6 @@ To use the Objective-C declarations in files in the same framework target as you
 
 1. Under Build Settings, in Packaging, make sure the Defines Module setting for the framework target is set to Yes.
 2. In the umbrella header, import every Objective-C header you want to expose to Swift.
-
-#### Swift Error: Bridging headers are not allowed in Frameworks.
-
-NOTE: This shold only apply to clients who have setup the Data Collecter previously in their Swift app and then encountered the issue when updating their version of Xcode.
-
-Recent Xcode changes altered the way to pull in ObjectiveC libraries in Swift.  The older bridging header file is no longer supported.  Instead, an umbrella file should be used. The Swift code will be able to access everything from objc that is included in the public umbrella header for your framework.
-
-In your umbrella header file, import every Objective-C header you want to expose to Swift. To achieve this, do the following:
-
-1. Remove your bridging header file.
-2. Remove references to the bridging header file in the build settings for the framework.
-3. Under Build Settings, in Packaging, make sure the Defines Module setting for the framework target is set to Yes.
-4. Add the necessary headers to your umbrella file ([ProductName].h)
-5. Make the included files public in the framework's "Headers" section of its "Build Phases".
-6. Clean and rebuild.
-
-Note: The "umbrella header file" is a file (named [ProductName].h) that generally represents all public headers of a framework. It is usually just a list of #import statements to other headers contained in the framework. Example: UIKit.h
 
 ## Location Permissions
 
