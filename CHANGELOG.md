@@ -1,5 +1,9 @@
 # iOS SDK Release Notes
 
+## 4.0.3
+
+* Fix C-Flag issue in library which was preventing Archiving
+
 ## 4.0.2
 
 * Enabled bitcode flag in library
