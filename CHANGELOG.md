@@ -1,6 +1,14 @@
 # iOS SDK Release Notes
 
-<<<<<<< HEAD
+## 4.0.3
+
+* Fix C-Flag issue in library which was preventing Archiving
+* Enabled bitcode flag in example apps for testing
+
+## 4.0.2
+
+* Enabled bitcode flag in library
+
 ## 4.0.1
 
 * Changed Library to a Universal Debug Library to support other platforms like x86 for testing
@@ -59,9 +67,4 @@ Kount's iOS SDK 4.0.0 is compatible with:
 
 * Updated SDK in preparation for future enhancements. No coding interface changes implemented, completely compatible with established 3.0 integrations.
 * Tested with iOS 10
-* Bumped deployment target to iOS 8.0+
-
-## 3.0
-
-* Updated SDK with more intuitive configuration and collection
-* Improved collection capabilities
+* Bumped deployment target to iOS 8.0
