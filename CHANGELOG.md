@@ -3,11 +3,11 @@
 ## 4.0.3
 
 * Fix C-Flag issue in library which was preventing Archiving
-* Enabled bitcode flag in example apps for testing
 
 ## 4.0.2
 
 * Enabled bitcode flag in library
+* Enabled bitcode flag in example apps for testing
 
 ## 4.0.1
 
