@@ -286,6 +286,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = YES;
 				DEVELOPMENT_TEAM = 543BQA7L5F;
 				ENABLE_BITCODE = YES;
 				INFOPLIST_FILE = CheckoutExampleObjC/Info.plist;
@@ -301,6 +302,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COPY_PHASE_STRIP = YES;
 				ENABLE_BITCODE = YES;
 				INFOPLIST_FILE = CheckoutExampleObjC/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
