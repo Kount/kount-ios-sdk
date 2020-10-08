@@ -1,6 +1,6 @@
 import UIKit
 
-class ViewController: UIViewController, CheckoutViewControllerDelegate  {
+class ViewController: KountAnalyticsViewController, CheckoutViewControllerDelegate  {
 
     @IBOutlet weak var merchant: UILabel?
     @IBOutlet weak var environment: UILabel?
@@ -27,6 +27,8 @@ class ViewController: UIViewController, CheckoutViewControllerDelegate  {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "Checkout" {
             let navigationController = segue.destination
+            //To capture Analytics data starting from iOS version 13.0 or later, the modal presentation style should be fullscreen.
+            navigationController.modalPresentationStyle = .fullScreen
             let controller :CheckoutViewController = navigationController.childViewControllers[0] as! CheckoutViewController
             controller.delegate = self
         }

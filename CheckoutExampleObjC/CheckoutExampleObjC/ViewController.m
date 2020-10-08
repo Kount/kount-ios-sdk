@@ -25,6 +25,8 @@
 {
     if ([segue.identifier isEqualToString:@"Checkout"]) {
         UINavigationController *navigationController = segue.destinationViewController;
+        //To capture Analytics data starting from iOS version 13.0 or later, the modal presentation style should be fullscreen.
+        navigationController.modalPresentationStyle = UIModalPresentationFullScreen;
         CheckoutViewController *controller = [navigationController viewControllers][0];
         controller.delegate = self;
     }

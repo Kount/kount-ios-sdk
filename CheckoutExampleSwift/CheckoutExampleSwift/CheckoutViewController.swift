@@ -4,7 +4,7 @@ protocol CheckoutViewControllerDelegate: class {
     func didFinish(_ sender: CheckoutViewController)
 }
 
-class CheckoutViewController: UIViewController {
+class CheckoutViewController: KountAnalyticsViewController {
     
     @IBOutlet weak var textView: UITextView?
     weak var delegate:CheckoutViewControllerDelegate?
