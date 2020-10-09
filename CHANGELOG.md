@@ -1,5 +1,18 @@
 # iOS SDK Release Notes
 
+
+## 4.1.0
+
+* Added new UI element collection capabilities for analytics
+
+## 4.0.4.1
+
+* Documentation update
+
+## 4.0.4
+
+* Fix ARCH issues
+
 ## 4.0.3
 
 * Fix C-Flag issue in library which was preventing Archiving
