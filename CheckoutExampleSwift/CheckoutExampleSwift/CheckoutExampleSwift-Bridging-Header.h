@@ -10,5 +10,6 @@
 #define CheckoutExampleSwift_Bridging_Header_h
 
 #import "KDataCollector.h"
+#import "KountAnalyticsViewController.h"
 
 #endif /* CheckoutExampleSwift_Bridging_Header_h */
