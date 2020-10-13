@@ -276,6 +276,7 @@
 				COPY_PHASE_STRIP = YES;
 				DEVELOPMENT_TEAM = 543BQA7L5F;
 				ENABLE_BITCODE = YES;
+				EXCLUDED_ARCHS = "";
 				INFOPLIST_FILE = CheckoutExampleSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				ONLY_ACTIVE_ARCH = YES;
