@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,8 +13,8 @@
 		7E7826821CD902180008C69A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E7826801CD902180008C69A /* Main.storyboard */; };
 		7E7826841CD902180008C69A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E7826831CD902180008C69A /* Assets.xcassets */; };
 		7E7826871CD902180008C69A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E7826851CD902180008C69A /* LaunchScreen.storyboard */; };
-		7E7826951CD904040008C69A /* libKountDataCollector.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E7826941CD904040008C69A /* libKountDataCollector.a */; };
 		7E7826981CD926830008C69A /* CheckoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E7826971CD926830008C69A /* CheckoutViewController.m */; };
+		8DE65B01254BFB39005CC1BC /* KountDataCollector.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DE65B00254BFB39005CC1BC /* KountDataCollector.xcframework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,9 +28,9 @@
 		7E7826831CD902180008C69A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7E7826861CD902180008C69A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7E7826881CD902180008C69A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7E7826941CD904040008C69A /* libKountDataCollector.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libKountDataCollector.a; path = ../KountDataCollector/libKountDataCollector.a; sourceTree = "<group>"; };
 		7E7826961CD926830008C69A /* CheckoutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheckoutViewController.h; sourceTree = "<group>"; };
 		7E7826971CD926830008C69A /* CheckoutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheckoutViewController.m; sourceTree = "<group>"; };
+		8DE65B00254BFB39005CC1BC /* KountDataCollector.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = KountDataCollector.xcframework; path = ../KountDataCollector/KountDataCollector.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,7 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7E7826951CD904040008C69A /* libKountDataCollector.a in Frameworks */,
+				8DE65B01254BFB39005CC1BC /* KountDataCollector.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -48,7 +48,7 @@
 		7E78266B1CD902180008C69A = {
 			isa = PBXGroup;
 			children = (
-				7E7826941CD904040008C69A /* libKountDataCollector.a */,
+				8DE65B00254BFB39005CC1BC /* KountDataCollector.xcframework */,
 				7E7826761CD902180008C69A /* CheckoutExampleObjC */,
 				7E7826751CD902180008C69A /* Products */,
 			);
@@ -291,7 +291,10 @@
 				ENABLE_BITCODE = YES;
 				INFOPLIST_FILE = CheckoutExampleObjC/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.kount.CheckoutExampleObjC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -306,7 +309,10 @@
 				ENABLE_BITCODE = YES;
 				INFOPLIST_FILE = CheckoutExampleObjC/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.kount.CheckoutExampleObjC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
