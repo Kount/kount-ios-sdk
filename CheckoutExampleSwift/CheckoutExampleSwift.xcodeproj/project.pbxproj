@@ -13,7 +13,7 @@
 		7E7826AD1CDA4D120008C69A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E7826AC1CDA4D120008C69A /* Assets.xcassets */; };
 		7E7826B01CDA4D120008C69A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E7826AE1CDA4D120008C69A /* LaunchScreen.storyboard */; };
 		7E7826B81CDA4DD30008C69A /* CheckoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E7826B71CDA4DD30008C69A /* CheckoutViewController.swift */; };
-		ACF435892571139F002C0E79 /* KountDDCPackage in Frameworks */ = {isa = PBXBuildFile; productRef = ACF435882571139F002C0E79 /* KountDDCPackage */; };
+		8DAB5103257A22EE00F4399F /* KountDDCPackage in Frameworks */ = {isa = PBXBuildFile; productRef = 8DAB5102257A22EE00F4399F /* KountDDCPackage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -39,7 +39,7 @@
 		7E7826B11CDA4D120008C69A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7E7826B71CDA4DD30008C69A /* CheckoutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckoutViewController.swift; sourceTree = "<group>"; };
 		7E7826BC1CDA50290008C69A /* CheckoutExampleSwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CheckoutExampleSwift-Bridging-Header.h"; path = "CheckoutExampleSwift/CheckoutExampleSwift-Bridging-Header.h"; sourceTree = "<group>"; };
-		ACF435872571138E002C0E79 /* KountDDCPackage */ = {isa = PBXFileReference; lastKnownFileType = folder; path = KountDDCPackage; sourceTree = "<group>"; };
+		8DAB5101257A22C900F4399F /* KountDDCPackage */ = {isa = PBXFileReference; lastKnownFileType = folder; path = KountDDCPackage; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,7 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ACF435892571139F002C0E79 /* KountDDCPackage in Frameworks */,
+				8DAB5103257A22EE00F4399F /* KountDDCPackage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,7 +57,7 @@
 		7E7826991CDA4D120008C69A = {
 			isa = PBXGroup;
 			children = (
-				ACF435872571138E002C0E79 /* KountDDCPackage */,
+				8DAB5101257A22C900F4399F /* KountDDCPackage */,
 				7E7826BC1CDA50290008C69A /* CheckoutExampleSwift-Bridging-Header.h */,
 				7E7826A41CDA4D120008C69A /* CheckoutExampleSwift */,
 				7E7826A31CDA4D120008C69A /* Products */,
@@ -112,7 +112,7 @@
 			);
 			name = CheckoutExampleSwift;
 			packageProductDependencies = (
-				ACF435882571139F002C0E79 /* KountDDCPackage */,
+				8DAB5102257A22EE00F4399F /* KountDDCPackage */,
 			);
 			productName = CheckoutExampleSwift;
 			productReference = 7E7826A21CDA4D120008C69A /* CheckoutExampleSwift.app */;
@@ -304,6 +304,7 @@
 				COPY_PHASE_STRIP = YES;
 				DEVELOPMENT_TEAM = 543BQA7L5F;
 				ENABLE_BITCODE = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = CheckoutExampleSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -325,6 +326,7 @@
 				COPY_PHASE_STRIP = YES;
 				DEVELOPMENT_TEAM = 543BQA7L5F;
 				ENABLE_BITCODE = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = CheckoutExampleSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -362,7 +364,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		ACF435882571139F002C0E79 /* KountDDCPackage */ = {
+		8DAB5102257A22EE00F4399F /* KountDDCPackage */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = KountDDCPackage;
 		};
