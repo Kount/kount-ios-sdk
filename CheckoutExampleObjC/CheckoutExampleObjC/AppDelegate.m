@@ -20,9 +20,17 @@
     [dataCollectionObject setEnvironmentForAnalytics: [KDataCollector.sharedCollector environment]];
     // To collect Analytics Data, you'll want set this analyticsData to YES or else NO
     BOOL analyticsData = YES;
-    [dataCollectionObject collect:sessionID analyticsSwitch:analyticsData completion:^(NSString * _Nonnull sessionID, NSError * _Nullable error) {
-        if (error != nil) {
-            NSLog(@"%@",error);
+    [dataCollectionObject collect:sessionID analyticsSwitch:analyticsData completion:^(NSString * _Nonnull sessionID, BOOL success, NSError * _Nullable error) {
+        if(success) {
+            NSLog(@"Collection Successful");
+        }
+        else {
+            if (error != nil) {
+                NSLog(@"Collection failed with error:%@",error.description);
+            }
+            else {
+                NSLog(@"Collection failed without error");
+            }
         }
     }];
     

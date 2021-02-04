@@ -15,3 +15,24 @@
 @interface UISlider (CustomSlider)
 
 @end
+
+@interface UIStepper (CustomStepper)
+
+@end
+
+@interface UIPageControl (CustomPageControl)
+
+@end
+
+@interface UIColorWell (CustomColorWell)
+
+@end
+
+@interface UIScrollView (CustomScrollView)
+
+@end
+
+@interface UITableView (CustomTableView)
+
+@end
+
