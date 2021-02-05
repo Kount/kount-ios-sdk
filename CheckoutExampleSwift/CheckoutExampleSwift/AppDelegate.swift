@@ -22,11 +22,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // To collect Analytics Data, you'll want set this analyticsData to true or else false
         let analyticsData = true
         KountAnalyticsViewController().setEnvironmentForAnalytics(KDataCollector.shared().environment)
-        KountAnalyticsViewController().collect(sessionID, analyticsSwitch: analyticsData) { (sessionID, error) in
-            if (error != nil) {
-                print(error as Any)
+        KountAnalyticsViewController().collect(sessionID, analyticsSwitch: analyticsData) {
+            (sessionID, success, error) in
+                if (success) {
+                    print("Collection Successful")
+                }
+                else {
+                    if((error) != nil) {
+                        print("Collection failed with error",error?.localizedDescription as Any)
+                    }
+                    else {
+                        print("Collection failed without error")
+                    }
+                }
             }
-        }
         return true
     }
     
