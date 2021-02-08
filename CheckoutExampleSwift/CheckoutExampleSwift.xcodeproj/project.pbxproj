@@ -304,7 +304,6 @@
 				COPY_PHASE_STRIP = YES;
 				DEVELOPMENT_TEAM = 543BQA7L5F;
 				ENABLE_BITCODE = YES;
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = CheckoutExampleSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -326,7 +325,6 @@
 				COPY_PHASE_STRIP = YES;
 				DEVELOPMENT_TEAM = 543BQA7L5F;
 				ENABLE_BITCODE = YES;
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = CheckoutExampleSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
