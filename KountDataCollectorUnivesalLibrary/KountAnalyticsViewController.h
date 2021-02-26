@@ -13,10 +13,13 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface KountAnalyticsViewController : UIViewController <UITextFieldDelegate, UITableViewDataSource, UITableViewDelegate, UICollectionViewDelegate, UICollectionViewDataSource> {
+@interface KountAnalyticsViewController : UIViewController <UITextFieldDelegate, UITableViewDataSource, UITableViewDelegate, UICollectionViewDelegate, UICollectionViewDataSource, UITextViewDelegate, UISearchBarDelegate> {
 
 }
 
++ (id)sharedInstance;
++ (void)setColorWellButtonType;
+- (NSString *)getColorWellButtonType;
 + (NSString *)getAppSessionID;
 - (BOOL)checkIsDeviceJailbroken;
 - (void)appear;
@@ -27,6 +30,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)msDifferenceBetweenCharacter;
 - (void)allMsDifferenceBetweenKeys;
 - (void)assignInputData;
+- (void)deviceDidRotate:(NSNotification *)notification;
 - (void)collectBatteryData;
 - (void)getBatteryState;
 - (void)getBatteryLevel;
@@ -35,16 +39,19 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)didChangeBatteryLevel:(NSNotification *)notification;
 - (void)didChangePowerMode:(NSNotification *)notification;
 - (void)assignBatteryData;
-- (void)update;
-- (void)collect:(NSString *)sessionID analyticsSwitch:(BOOL)analyticsData completion:(nullable void (^)(NSString *_Nonnull sessionID, NSError *_Nullable error))completionBlock;
+- (void)getDeviceOrientationData;
+- (void)collectDeviceOrientationData;
+- (void)assignDeviceOrientationData;
+- (void)checkForDeviceMotion;
+- (void)collect:(NSString *)sessionID analyticsSwitch:(BOOL)analyticsData completion:(nullable void (^)(NSString *_Nonnull sessionID, BOOL success, NSError *_Nullable error))completionBlock;
 - (NSString *)getSessionID;
 - (void)createJsonObjectFormat;
 - (void)storeLogInEvents:(BOOL)logInStatus;
 - (void)assignFormData;
-- (void)storeButtonEvents:(UIView *)myView touchesOnButton:(UITouch *)touches;
 - (void)setEnvironmentForAnalytics:(KEnvironment)env;
 - (void)registerBackgroundTask;
 - (void)appInBackground;
+
 @end
 
 NS_ASSUME_NONNULL_END
