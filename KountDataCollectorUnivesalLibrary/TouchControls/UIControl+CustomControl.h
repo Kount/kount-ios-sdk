@@ -31,8 +31,3 @@
 @interface UIScrollView (CustomScrollView)
 
 @end
-
-@interface UITableView (CustomTableView)
-
-@end
-
