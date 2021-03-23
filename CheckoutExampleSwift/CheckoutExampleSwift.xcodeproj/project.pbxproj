@@ -13,8 +13,8 @@
 		7E7826AD1CDA4D120008C69A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E7826AC1CDA4D120008C69A /* Assets.xcassets */; };
 		7E7826B01CDA4D120008C69A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E7826AE1CDA4D120008C69A /* LaunchScreen.storyboard */; };
 		7E7826B81CDA4DD30008C69A /* CheckoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E7826B71CDA4DD30008C69A /* CheckoutViewController.swift */; };
-		AC9AD77F25E79340008E7B24 /* KountDataCollector.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC9AD77C25E7931A008E7B24 /* KountDataCollector.xcframework */; };
-		AC9AD78025E79340008E7B24 /* KountDataCollector.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AC9AD77C25E7931A008E7B24 /* KountDataCollector.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		ACDCC40D2609AB3000BA9266 /* KountDataCollector.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACDCC40A2609AB1800BA9266 /* KountDataCollector.xcframework */; };
+		ACDCC40E2609AB3000BA9266 /* KountDataCollector.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = ACDCC40A2609AB1800BA9266 /* KountDataCollector.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		ACFE766525CAB93700825D2C /* CustomWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = ACFE765F25CAB93700825D2C /* CustomWindow.m */; };
 		ACFE766625CAB93700825D2C /* UIViewController+TouchControl.m in Sources */ = {isa = PBXBuildFile; fileRef = ACFE766025CAB93700825D2C /* UIViewController+TouchControl.m */; };
 		ACFE766725CAB93700825D2C /* UIControl+CustomControl.m in Sources */ = {isa = PBXBuildFile; fileRef = ACFE766425CAB93700825D2C /* UIControl+CustomControl.m */; };
@@ -27,7 +27,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				AC9AD78025E79340008E7B24 /* KountDataCollector.xcframework in Embed Frameworks */,
+				ACDCC40E2609AB3000BA9266 /* KountDataCollector.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -44,7 +44,7 @@
 		7E7826B11CDA4D120008C69A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7E7826B71CDA4DD30008C69A /* CheckoutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckoutViewController.swift; sourceTree = "<group>"; };
 		7E7826BC1CDA50290008C69A /* CheckoutExampleSwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CheckoutExampleSwift-Bridging-Header.h"; path = "CheckoutExampleSwift/CheckoutExampleSwift-Bridging-Header.h"; sourceTree = "<group>"; };
-		AC9AD77C25E7931A008E7B24 /* KountDataCollector.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = KountDataCollector.xcframework; path = ../KountDataCollector.xcframework; sourceTree = "<group>"; };
+		ACDCC40A2609AB1800BA9266 /* KountDataCollector.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = KountDataCollector.xcframework; path = ../KountDataCollector.xcframework; sourceTree = "<group>"; };
 		ACFE765F25CAB93700825D2C /* CustomWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomWindow.m; sourceTree = "<group>"; };
 		ACFE766025CAB93700825D2C /* UIViewController+TouchControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+TouchControl.m"; sourceTree = "<group>"; };
 		ACFE766125CAB93700825D2C /* UIControl+CustomControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIControl+CustomControl.h"; sourceTree = "<group>"; };
@@ -58,7 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC9AD77F25E79340008E7B24 /* KountDataCollector.xcframework in Frameworks */,
+				ACDCC40D2609AB3000BA9266 /* KountDataCollector.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,7 +68,7 @@
 		7E7826991CDA4D120008C69A = {
 			isa = PBXGroup;
 			children = (
-				AC9AD77C25E7931A008E7B24 /* KountDataCollector.xcframework */,
+				ACDCC40A2609AB1800BA9266 /* KountDataCollector.xcframework */,
 				7E7826BC1CDA50290008C69A /* CheckoutExampleSwift-Bridging-Header.h */,
 				7E7826A41CDA4D120008C69A /* CheckoutExampleSwift */,
 				7E7826A31CDA4D120008C69A /* Products */,
@@ -109,12 +109,12 @@
 		ACFE765E25CAB93700825D2C /* TouchControls */ = {
 			isa = PBXGroup;
 			children = (
-				ACFE765F25CAB93700825D2C /* CustomWindow.m */,
-				ACFE766025CAB93700825D2C /* UIViewController+TouchControl.m */,
-				ACFE766125CAB93700825D2C /* UIControl+CustomControl.h */,
 				ACFE766225CAB93700825D2C /* CustomWindow.h */,
-				ACFE766325CAB93700825D2C /* UIViewController+TouchControl.h */,
+				ACFE765F25CAB93700825D2C /* CustomWindow.m */,
+				ACFE766125CAB93700825D2C /* UIControl+CustomControl.h */,
 				ACFE766425CAB93700825D2C /* UIControl+CustomControl.m */,
+				ACFE766325CAB93700825D2C /* UIViewController+TouchControl.h */,
+				ACFE766025CAB93700825D2C /* UIViewController+TouchControl.m */,
 			);
 			name = TouchControls;
 			path = ../../KountDataCollectorUnivesalLibrary/TouchControls;
