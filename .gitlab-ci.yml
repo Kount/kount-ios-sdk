@@ -1,0 +1,61 @@
+include:
+    - project: kount/device/gitlab-ci-templates
+      ref: 1.3.3
+      file: gitlab-ci-templates.yml
+    - project: kount/plat/gitlab-ci-shared
+      file: gitlab-ci-shared.yml
+      ref: 6.2.1
+    - project: kount/plat/gitlab-shared-ci/docker-shared-ci
+      file: docker-shared-ci.yml
+      ref: 1.2.2
+    - project: kount/plat/gitlab-shared-ci/terraform-shared-ci
+      file: terraform-shared-ci.yml
+      ref: 1.3.0
+  
+  stages:
+    - test
+  
+  variables:
+    APP_ROLE: mac0s-gitlab-runner
+    AWS_REGION: us-west-2
+    INFRA_WORKDIR: build/datadog
+    TF_VAR_approle: ${APP_ROLE}
+    TF_WORKSPACE: ${CI_ENVIRONMENT_NAME}
+    MANUAL_DEPLOY: "false"
+    MANUAL_DEPLOY_ENV: "none"
+    # AMI non-prod tag: 1.1.9
+  
+  # =========================================================================
+  # CI templates
+  # =========================================================================
+  
+  .cfn-deploy-template:
+    extends: [.device-aws-cfn-deploy-with-autoscale-group-pre-post-deploy]
+    variables:
+      AWS_REGION: us-west-2
+      INFRA_FOLDER: build/cfn
+      INFRA_BUCKET: kount-device-nonprod-platform-infrastructure
+      CFN_STACK_PARAM_AppRole: ${APP_ROLE}
+      CFN_STACK_PARAM_DeployEnv: ${CI_ENVIRONMENT_SLUG}
+      CFN_STACK_PARAM_ServiceTeam: device
+      CFN_STACK_PARAM_DatadogAPIKey: ${DATADOG_API_KEY}
+  
+  # =========================================================================
+  # build and validate
+  # =========================================================================
+  .job_template: &link-pkg-path mkdir -p $(dirname ${PACKAGE_PATH})
+    && ln -svf ${CI_PROJECT_DIR} ${PACKAGE_PATH}
+    && cd ${PACKAGE_PATH}
+  
+  ec2 build:
+    stage: test
+    script:
+      - echo "TRIGGERED!"
+  
+  Type: AWS::EC2::Host
+  Properties:
+    AutoPlacement: on
+    AvailabilityZone: us-west-2
+    HostRecovery: off
+    InstanceType: mac1.metal
+  
