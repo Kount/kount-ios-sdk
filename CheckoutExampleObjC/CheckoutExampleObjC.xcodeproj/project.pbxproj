@@ -14,11 +14,10 @@
 		7E7826841CD902180008C69A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E7826831CD902180008C69A /* Assets.xcassets */; };
 		7E7826871CD902180008C69A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E7826851CD902180008C69A /* LaunchScreen.storyboard */; };
 		7E7826981CD926830008C69A /* CheckoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E7826971CD926830008C69A /* CheckoutViewController.m */; };
-		ACDCC40F2609AB4500BA9266 /* KountDataCollector.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACDCC40B2609AB2200BA9266 /* KountDataCollector.xcframework */; };
-		ACDCC4102609AB4500BA9266 /* KountDataCollector.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = ACDCC40B2609AB2200BA9266 /* KountDataCollector.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		ACFE766F25CAB95B00825D2C /* CustomWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = ACFE766925CAB95B00825D2C /* CustomWindow.m */; };
-		ACFE767025CAB95B00825D2C /* UIViewController+TouchControl.m in Sources */ = {isa = PBXBuildFile; fileRef = ACFE766A25CAB95B00825D2C /* UIViewController+TouchControl.m */; };
-		ACFE767125CAB95B00825D2C /* UIControl+CustomControl.m in Sources */ = {isa = PBXBuildFile; fileRef = ACFE766E25CAB95B00825D2C /* UIControl+CustomControl.m */; };
+		AC36BCCC28CB0B920026ECEE /* CustomWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = AC36BCC628CB0B920026ECEE /* CustomWindow.m */; };
+		AC36BCCD28CB0B920026ECEE /* UIViewController+TouchControl.m in Sources */ = {isa = PBXBuildFile; fileRef = AC36BCC728CB0B920026ECEE /* UIViewController+TouchControl.m */; };
+		AC36BCCE28CB0B920026ECEE /* UIControl+CustomControl.m in Sources */ = {isa = PBXBuildFile; fileRef = AC36BCCB28CB0B920026ECEE /* UIControl+CustomControl.m */; };
+		AC36BCDC28CB0C060026ECEE /* KountDataCollector.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC36BCDB28CB0C060026ECEE /* KountDataCollector.xcframework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,7 +27,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				ACDCC4102609AB4500BA9266 /* KountDataCollector.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -48,13 +46,13 @@
 		7E7826881CD902180008C69A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7E7826961CD926830008C69A /* CheckoutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheckoutViewController.h; sourceTree = "<group>"; };
 		7E7826971CD926830008C69A /* CheckoutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheckoutViewController.m; sourceTree = "<group>"; };
-		ACDCC40B2609AB2200BA9266 /* KountDataCollector.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = KountDataCollector.xcframework; path = ../KountDataCollector.xcframework; sourceTree = "<group>"; };
-		ACFE766925CAB95B00825D2C /* CustomWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomWindow.m; sourceTree = "<group>"; };
-		ACFE766A25CAB95B00825D2C /* UIViewController+TouchControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+TouchControl.m"; sourceTree = "<group>"; };
-		ACFE766B25CAB95B00825D2C /* UIControl+CustomControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIControl+CustomControl.h"; sourceTree = "<group>"; };
-		ACFE766C25CAB95B00825D2C /* CustomWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomWindow.h; sourceTree = "<group>"; };
-		ACFE766D25CAB95B00825D2C /* UIViewController+TouchControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+TouchControl.h"; sourceTree = "<group>"; };
-		ACFE766E25CAB95B00825D2C /* UIControl+CustomControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIControl+CustomControl.m"; sourceTree = "<group>"; };
+		AC36BCC628CB0B920026ECEE /* CustomWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomWindow.m; sourceTree = "<group>"; };
+		AC36BCC728CB0B920026ECEE /* UIViewController+TouchControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+TouchControl.m"; sourceTree = "<group>"; };
+		AC36BCC828CB0B920026ECEE /* UIControl+CustomControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIControl+CustomControl.h"; sourceTree = "<group>"; };
+		AC36BCC928CB0B920026ECEE /* CustomWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomWindow.h; sourceTree = "<group>"; };
+		AC36BCCA28CB0B920026ECEE /* UIViewController+TouchControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+TouchControl.h"; sourceTree = "<group>"; };
+		AC36BCCB28CB0B920026ECEE /* UIControl+CustomControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIControl+CustomControl.m"; sourceTree = "<group>"; };
+		AC36BCDB28CB0C060026ECEE /* KountDataCollector.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = KountDataCollector.xcframework; path = ../KountDataCollector.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ACDCC40F2609AB4500BA9266 /* KountDataCollector.xcframework in Frameworks */,
+				AC36BCDC28CB0C060026ECEE /* KountDataCollector.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,7 +70,7 @@
 		7E78266B1CD902180008C69A = {
 			isa = PBXGroup;
 			children = (
-				ACDCC40B2609AB2200BA9266 /* KountDataCollector.xcframework */,
+				AC36BCDB28CB0C060026ECEE /* KountDataCollector.xcframework */,
 				7E7826761CD902180008C69A /* CheckoutExampleObjC */,
 				7E7826751CD902180008C69A /* Products */,
 			);
@@ -89,7 +87,7 @@
 		7E7826761CD902180008C69A /* CheckoutExampleObjC */ = {
 			isa = PBXGroup;
 			children = (
-				ACFE766825CAB95B00825D2C /* TouchControls */,
+				AC36BCC528CB0B920026ECEE /* TouchControls */,
 				7E78267A1CD902180008C69A /* AppDelegate.h */,
 				7E78267B1CD902180008C69A /* AppDelegate.m */,
 				7E78267D1CD902180008C69A /* ViewController.h */,
@@ -113,18 +111,18 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		ACFE766825CAB95B00825D2C /* TouchControls */ = {
+		AC36BCC528CB0B920026ECEE /* TouchControls */ = {
 			isa = PBXGroup;
 			children = (
-				ACFE766C25CAB95B00825D2C /* CustomWindow.h */,
-				ACFE766925CAB95B00825D2C /* CustomWindow.m */,
-				ACFE766B25CAB95B00825D2C /* UIControl+CustomControl.h */,
-				ACFE766E25CAB95B00825D2C /* UIControl+CustomControl.m */,
-				ACFE766D25CAB95B00825D2C /* UIViewController+TouchControl.h */,
-				ACFE766A25CAB95B00825D2C /* UIViewController+TouchControl.m */,
+				AC36BCC928CB0B920026ECEE /* CustomWindow.h */,
+				AC36BCC628CB0B920026ECEE /* CustomWindow.m */,
+				AC36BCC828CB0B920026ECEE /* UIControl+CustomControl.h */,
+				AC36BCCB28CB0B920026ECEE /* UIControl+CustomControl.m */,
+				AC36BCCA28CB0B920026ECEE /* UIViewController+TouchControl.h */,
+				AC36BCC728CB0B920026ECEE /* UIViewController+TouchControl.m */,
 			);
 			name = TouchControls;
-			path = ../../KountDataCollectorUnivesalLibrary/TouchControls;
+			path = ../../KountDataCollectorUniversalLibrary/TouchControls;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,12 +199,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ACFE766F25CAB95B00825D2C /* CustomWindow.m in Sources */,
+				AC36BCCC28CB0B920026ECEE /* CustomWindow.m in Sources */,
 				7E7826981CD926830008C69A /* CheckoutViewController.m in Sources */,
 				7E78267F1CD902180008C69A /* ViewController.m in Sources */,
-				ACFE767125CAB95B00825D2C /* UIControl+CustomControl.m in Sources */,
+				AC36BCCE28CB0B920026ECEE /* UIControl+CustomControl.m in Sources */,
 				7E78267C1CD902180008C69A /* AppDelegate.m in Sources */,
-				ACFE767025CAB95B00825D2C /* UIViewController+TouchControl.m in Sources */,
+				AC36BCCD28CB0B920026ECEE /* UIViewController+TouchControl.m in Sources */,
 				7E7826791CD902180008C69A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -273,7 +271,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = ../KountDataCollector;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LIBRARY_SEARCH_PATHS = ../KountDataCollector;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -315,7 +313,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = ../KountDataCollector;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LIBRARY_SEARCH_PATHS = ../KountDataCollector;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
@@ -335,7 +333,7 @@
 				ENABLE_BITCODE = YES;
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = CheckoutExampleObjC/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -359,7 +357,7 @@
 				ENABLE_BITCODE = YES;
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = CheckoutExampleObjC/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
