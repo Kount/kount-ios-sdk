@@ -13,11 +13,10 @@
 		7E7826AD1CDA4D120008C69A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E7826AC1CDA4D120008C69A /* Assets.xcassets */; };
 		7E7826B01CDA4D120008C69A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E7826AE1CDA4D120008C69A /* LaunchScreen.storyboard */; };
 		7E7826B81CDA4DD30008C69A /* CheckoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E7826B71CDA4DD30008C69A /* CheckoutViewController.swift */; };
-		ACDCC40D2609AB3000BA9266 /* KountDataCollector.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACDCC40A2609AB1800BA9266 /* KountDataCollector.xcframework */; };
-		ACDCC40E2609AB3000BA9266 /* KountDataCollector.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = ACDCC40A2609AB1800BA9266 /* KountDataCollector.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		ACFE766525CAB93700825D2C /* CustomWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = ACFE765F25CAB93700825D2C /* CustomWindow.m */; };
-		ACFE766625CAB93700825D2C /* UIViewController+TouchControl.m in Sources */ = {isa = PBXBuildFile; fileRef = ACFE766025CAB93700825D2C /* UIViewController+TouchControl.m */; };
-		ACFE766725CAB93700825D2C /* UIControl+CustomControl.m in Sources */ = {isa = PBXBuildFile; fileRef = ACFE766425CAB93700825D2C /* UIControl+CustomControl.m */; };
+		AC36BCD628CB0BA50026ECEE /* CustomWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = AC36BCD028CB0BA50026ECEE /* CustomWindow.m */; };
+		AC36BCD728CB0BA50026ECEE /* UIViewController+TouchControl.m in Sources */ = {isa = PBXBuildFile; fileRef = AC36BCD128CB0BA50026ECEE /* UIViewController+TouchControl.m */; };
+		AC36BCD828CB0BA50026ECEE /* UIControl+CustomControl.m in Sources */ = {isa = PBXBuildFile; fileRef = AC36BCD528CB0BA50026ECEE /* UIControl+CustomControl.m */; };
+		AC36BCDA28CB0BFB0026ECEE /* KountDataCollector.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC36BCD928CB0BFA0026ECEE /* KountDataCollector.xcframework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,7 +26,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				ACDCC40E2609AB3000BA9266 /* KountDataCollector.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -44,13 +42,13 @@
 		7E7826B11CDA4D120008C69A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7E7826B71CDA4DD30008C69A /* CheckoutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckoutViewController.swift; sourceTree = "<group>"; };
 		7E7826BC1CDA50290008C69A /* CheckoutExampleSwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CheckoutExampleSwift-Bridging-Header.h"; path = "CheckoutExampleSwift/CheckoutExampleSwift-Bridging-Header.h"; sourceTree = "<group>"; };
-		ACDCC40A2609AB1800BA9266 /* KountDataCollector.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = KountDataCollector.xcframework; path = ../KountDataCollector.xcframework; sourceTree = "<group>"; };
-		ACFE765F25CAB93700825D2C /* CustomWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomWindow.m; sourceTree = "<group>"; };
-		ACFE766025CAB93700825D2C /* UIViewController+TouchControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+TouchControl.m"; sourceTree = "<group>"; };
-		ACFE766125CAB93700825D2C /* UIControl+CustomControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIControl+CustomControl.h"; sourceTree = "<group>"; };
-		ACFE766225CAB93700825D2C /* CustomWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomWindow.h; sourceTree = "<group>"; };
-		ACFE766325CAB93700825D2C /* UIViewController+TouchControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+TouchControl.h"; sourceTree = "<group>"; };
-		ACFE766425CAB93700825D2C /* UIControl+CustomControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIControl+CustomControl.m"; sourceTree = "<group>"; };
+		AC36BCD028CB0BA50026ECEE /* CustomWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomWindow.m; sourceTree = "<group>"; };
+		AC36BCD128CB0BA50026ECEE /* UIViewController+TouchControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+TouchControl.m"; sourceTree = "<group>"; };
+		AC36BCD228CB0BA50026ECEE /* UIControl+CustomControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIControl+CustomControl.h"; sourceTree = "<group>"; };
+		AC36BCD328CB0BA50026ECEE /* CustomWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomWindow.h; sourceTree = "<group>"; };
+		AC36BCD428CB0BA50026ECEE /* UIViewController+TouchControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+TouchControl.h"; sourceTree = "<group>"; };
+		AC36BCD528CB0BA50026ECEE /* UIControl+CustomControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIControl+CustomControl.m"; sourceTree = "<group>"; };
+		AC36BCD928CB0BFA0026ECEE /* KountDataCollector.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = KountDataCollector.xcframework; path = ../KountDataCollector.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ACDCC40D2609AB3000BA9266 /* KountDataCollector.xcframework in Frameworks */,
+				AC36BCDA28CB0BFB0026ECEE /* KountDataCollector.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,7 +66,7 @@
 		7E7826991CDA4D120008C69A = {
 			isa = PBXGroup;
 			children = (
-				ACDCC40A2609AB1800BA9266 /* KountDataCollector.xcframework */,
+				AC36BCD928CB0BFA0026ECEE /* KountDataCollector.xcframework */,
 				7E7826BC1CDA50290008C69A /* CheckoutExampleSwift-Bridging-Header.h */,
 				7E7826A41CDA4D120008C69A /* CheckoutExampleSwift */,
 				7E7826A31CDA4D120008C69A /* Products */,
@@ -87,7 +85,7 @@
 		7E7826A41CDA4D120008C69A /* CheckoutExampleSwift */ = {
 			isa = PBXGroup;
 			children = (
-				ACFE765E25CAB93700825D2C /* TouchControls */,
+				AC36BCCF28CB0BA50026ECEE /* TouchControls */,
 				7E7826A51CDA4D120008C69A /* AppDelegate.swift */,
 				7E7826A71CDA4D120008C69A /* ViewController.swift */,
 				7E7826B71CDA4DD30008C69A /* CheckoutViewController.swift */,
@@ -99,25 +97,25 @@
 			path = CheckoutExampleSwift;
 			sourceTree = "<group>";
 		};
+		AC36BCCF28CB0BA50026ECEE /* TouchControls */ = {
+			isa = PBXGroup;
+			children = (
+				AC36BCD328CB0BA50026ECEE /* CustomWindow.h */,
+				AC36BCD028CB0BA50026ECEE /* CustomWindow.m */,
+				AC36BCD228CB0BA50026ECEE /* UIControl+CustomControl.h */,
+				AC36BCD528CB0BA50026ECEE /* UIControl+CustomControl.m */,
+				AC36BCD428CB0BA50026ECEE /* UIViewController+TouchControl.h */,
+				AC36BCD128CB0BA50026ECEE /* UIViewController+TouchControl.m */,
+			);
+			name = TouchControls;
+			path = ../../KountDataCollectorUniversalLibrary/TouchControls;
+			sourceTree = "<group>";
+		};
 		ACFE764525CA80D900825D2C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		ACFE765E25CAB93700825D2C /* TouchControls */ = {
-			isa = PBXGroup;
-			children = (
-				ACFE766225CAB93700825D2C /* CustomWindow.h */,
-				ACFE765F25CAB93700825D2C /* CustomWindow.m */,
-				ACFE766125CAB93700825D2C /* UIControl+CustomControl.h */,
-				ACFE766425CAB93700825D2C /* UIControl+CustomControl.m */,
-				ACFE766325CAB93700825D2C /* UIViewController+TouchControl.h */,
-				ACFE766025CAB93700825D2C /* UIViewController+TouchControl.m */,
-			);
-			name = TouchControls;
-			path = ../../KountDataCollectorUnivesalLibrary/TouchControls;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -196,10 +194,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ACFE766725CAB93700825D2C /* UIControl+CustomControl.m in Sources */,
-				ACFE766525CAB93700825D2C /* CustomWindow.m in Sources */,
+				AC36BCD828CB0BA50026ECEE /* UIControl+CustomControl.m in Sources */,
+				AC36BCD628CB0BA50026ECEE /* CustomWindow.m in Sources */,
 				7E7826A81CDA4D120008C69A /* ViewController.swift in Sources */,
-				ACFE766625CAB93700825D2C /* UIViewController+TouchControl.m in Sources */,
+				AC36BCD728CB0BA50026ECEE /* UIViewController+TouchControl.m in Sources */,
 				7E7826B81CDA4DD30008C69A /* CheckoutViewController.swift in Sources */,
 				7E7826A61CDA4D120008C69A /* AppDelegate.swift in Sources */,
 			);
@@ -267,7 +265,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = ../KountDataCollector;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LIBRARY_SEARCH_PATHS = ../KountDataCollector;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -311,7 +309,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = ../KountDataCollector;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LIBRARY_SEARCH_PATHS = ../KountDataCollector;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
@@ -334,6 +332,7 @@
 				ENABLE_BITCODE = YES;
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = CheckoutExampleSwift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -359,6 +358,7 @@
 				ENABLE_BITCODE = YES;
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = CheckoutExampleSwift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
