@@ -14,10 +14,10 @@
 		7E7826841CD902180008C69A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E7826831CD902180008C69A /* Assets.xcassets */; };
 		7E7826871CD902180008C69A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E7826851CD902180008C69A /* LaunchScreen.storyboard */; };
 		7E7826981CD926830008C69A /* CheckoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E7826971CD926830008C69A /* CheckoutViewController.m */; };
+		AC3130C128FFFD6B0008C072 /* KountDataCollector.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC3130C028FFFD6A0008C072 /* KountDataCollector.xcframework */; };
 		AC36BCCC28CB0B920026ECEE /* CustomWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = AC36BCC628CB0B920026ECEE /* CustomWindow.m */; };
 		AC36BCCD28CB0B920026ECEE /* UIViewController+TouchControl.m in Sources */ = {isa = PBXBuildFile; fileRef = AC36BCC728CB0B920026ECEE /* UIViewController+TouchControl.m */; };
 		AC36BCCE28CB0B920026ECEE /* UIControl+CustomControl.m in Sources */ = {isa = PBXBuildFile; fileRef = AC36BCCB28CB0B920026ECEE /* UIControl+CustomControl.m */; };
-		AC36BCDC28CB0C060026ECEE /* KountDataCollector.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC36BCDB28CB0C060026ECEE /* KountDataCollector.xcframework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -46,13 +46,13 @@
 		7E7826881CD902180008C69A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7E7826961CD926830008C69A /* CheckoutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheckoutViewController.h; sourceTree = "<group>"; };
 		7E7826971CD926830008C69A /* CheckoutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheckoutViewController.m; sourceTree = "<group>"; };
+		AC3130C028FFFD6A0008C072 /* KountDataCollector.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = KountDataCollector.xcframework; path = ../KountDataCollector.xcframework; sourceTree = "<group>"; };
 		AC36BCC628CB0B920026ECEE /* CustomWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomWindow.m; sourceTree = "<group>"; };
 		AC36BCC728CB0B920026ECEE /* UIViewController+TouchControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+TouchControl.m"; sourceTree = "<group>"; };
 		AC36BCC828CB0B920026ECEE /* UIControl+CustomControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIControl+CustomControl.h"; sourceTree = "<group>"; };
 		AC36BCC928CB0B920026ECEE /* CustomWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomWindow.h; sourceTree = "<group>"; };
 		AC36BCCA28CB0B920026ECEE /* UIViewController+TouchControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+TouchControl.h"; sourceTree = "<group>"; };
 		AC36BCCB28CB0B920026ECEE /* UIControl+CustomControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIControl+CustomControl.m"; sourceTree = "<group>"; };
-		AC36BCDB28CB0C060026ECEE /* KountDataCollector.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = KountDataCollector.xcframework; path = ../KountDataCollector.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC36BCDC28CB0C060026ECEE /* KountDataCollector.xcframework in Frameworks */,
+				AC3130C128FFFD6B0008C072 /* KountDataCollector.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,7 +70,7 @@
 		7E78266B1CD902180008C69A = {
 			isa = PBXGroup;
 			children = (
-				AC36BCDB28CB0C060026ECEE /* KountDataCollector.xcframework */,
+				AC3130C028FFFD6A0008C072 /* KountDataCollector.xcframework */,
 				7E7826761CD902180008C69A /* CheckoutExampleObjC */,
 				7E7826751CD902180008C69A /* Products */,
 			);
@@ -330,7 +330,7 @@
 				COPY_PHASE_STRIP = YES;
 				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_TEAM = "";
-				ENABLE_BITCODE = YES;
+				ENABLE_BITCODE = NO;
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = CheckoutExampleObjC/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
@@ -354,7 +354,7 @@
 				COPY_PHASE_STRIP = YES;
 				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_TEAM = "";
-				ENABLE_BITCODE = YES;
+				ENABLE_BITCODE = NO;
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = CheckoutExampleObjC/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;

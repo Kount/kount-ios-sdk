@@ -18,10 +18,12 @@
     [[KDataCollector sharedCollector] collectForSession:sessionID completion:^(NSString * _Nonnull sessionID, BOOL success, NSError * _Nullable error) {
         if (success) {
             self.textView.text = [self.textView.text stringByAppendingString:@"Collection Successful"];
+            NSLog(@"Collection Status %@", [KountAnalyticsViewController getKDataCollectionStatus]);
         }
         else {
             self.textView.text = [self.textView.text stringByAppendingString:@"Collection Failed\n\n"];
             self.textView.text = [self.textView.text stringByAppendingString:[error description]];
+            NSLog(@"Collection Status %@", [KountAnalyticsViewController getKDataCollectionError]);
         }
     }];
 }
