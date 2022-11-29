@@ -12,6 +12,26 @@
 #import "KDataCollector.h"
 
 NS_ASSUME_NONNULL_BEGIN
+// DMD-352: Device Collection Status
+typedef NS_ENUM(NSInteger, KDataCollectorStatus) {
+    
+    // A device data collection not started
+    KDataCollectorStatusNotStarted = 0,
+    
+    // A device data collection started
+    KDataCollectorStatusStarted,
+    
+    // A device data collection completed successfully
+    KDataCollectorStatusCompleted,
+    
+    // A device data collection failed with error
+    KDataCollectorStatusFailedWithError,
+    
+    // A device data collection failed without error
+    KDataCollectorStatusFailedWithOutError,
+    
+};
+
 
 @interface KountAnalyticsViewController : UIViewController <UITextFieldDelegate, UITextViewDelegate, UISearchBarDelegate> {
 
@@ -51,6 +71,10 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)setEnvironmentForAnalytics:(KEnvironment)env;
 - (void)registerBackgroundTask;
 - (void)appInBackground;
+
+// DMD:352
++ (nullable NSString *)getKDataCollectionStatus;
++ (nullable NSError *)getKDataCollectionError;
 
 @end
 

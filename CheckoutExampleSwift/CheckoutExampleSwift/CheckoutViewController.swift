@@ -18,10 +18,12 @@ class CheckoutViewController: KountAnalyticsViewController {
         KDataCollector.shared().collect(forSession: sessionID) { (sessionID, success, error) in
             if success {
                 self.textView!.text = self.textView!.text + "Collection Successful"
+                print(KountAnalyticsViewController.getKDataCollectionStatus() as Any)
             } else {
                 self.textView!.text = self.textView!.text + "Collection Failed\n\n"
                 if ((error) != nil) {
                   self.textView!.text = self.textView!.text + error!.localizedDescription
+                    print(KountAnalyticsViewController.getKDataCollectionError() as Any)
                 }
             }
         }
