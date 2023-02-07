@@ -13,19 +13,21 @@
 		7E7826AD1CDA4D120008C69A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E7826AC1CDA4D120008C69A /* Assets.xcassets */; };
 		7E7826B01CDA4D120008C69A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E7826AE1CDA4D120008C69A /* LaunchScreen.storyboard */; };
 		7E7826B81CDA4DD30008C69A /* CheckoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E7826B71CDA4DD30008C69A /* CheckoutViewController.swift */; };
-		AC278C4F29000C8E0026A068 /* KountDataCollector.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC278C4E29000C8E0026A068 /* KountDataCollector.xcframework */; };
 		AC36BCD628CB0BA50026ECEE /* CustomWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = AC36BCD028CB0BA50026ECEE /* CustomWindow.m */; };
 		AC36BCD728CB0BA50026ECEE /* UIViewController+TouchControl.m in Sources */ = {isa = PBXBuildFile; fileRef = AC36BCD128CB0BA50026ECEE /* UIViewController+TouchControl.m */; };
 		AC36BCD828CB0BA50026ECEE /* UIControl+CustomControl.m in Sources */ = {isa = PBXBuildFile; fileRef = AC36BCD528CB0BA50026ECEE /* UIControl+CustomControl.m */; };
+		AC6D6E78299220A7006B3424 /* KountDataCollector.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC278C4E29000C8E0026A068 /* KountDataCollector.xcframework */; };
+		AC6D6E79299220A7006B3424 /* KountDataCollector.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AC278C4E29000C8E0026A068 /* KountDataCollector.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		ACFE765025CA815A00825D2C /* Embed Frameworks */ = {
+		AC6D6E7A299220A7006B3424 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				AC6D6E79299220A7006B3424 /* KountDataCollector.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -56,7 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC278C4F29000C8E0026A068 /* KountDataCollector.xcframework in Frameworks */,
+				AC6D6E78299220A7006B3424 /* KountDataCollector.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -128,7 +130,7 @@
 				7E78269E1CDA4D120008C69A /* Sources */,
 				7E78269F1CDA4D120008C69A /* Frameworks */,
 				7E7826A01CDA4D120008C69A /* Resources */,
-				ACFE765025CA815A00825D2C /* Embed Frameworks */,
+				AC6D6E7A299220A7006B3424 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
