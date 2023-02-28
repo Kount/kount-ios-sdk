@@ -12,4 +12,4 @@ your iOS app.
 
 ## Installation
 
-Follow the instructions onthe developer.kount.com site:  https://developer.kount.com/hc/en-us/sections/5319287642260-Integration-Guide?article=4411149718676
+Follow the instructions on the developer.kount.com site:  https://developer.kount.com/hc/en-us/sections/5319287642260-Integration-Guide?article=4411149718676
