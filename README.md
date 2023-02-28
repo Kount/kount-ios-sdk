@@ -12,8 +12,4 @@ your iOS app.
 
 ## Installation
 
-Download the [Kount iOS SDK](https://github.com/Kount/kount-ios-sdk), and then go to one of the following Kount support articles for the full installation instructions:
-
- •	[Swift code instructions](https://support.kount.com/hc/en-us/articles/360050315312-How-to-Integrate-the-Kount-iOS-SDK-into-a-Swift-App)
-
- •	[Objective-C instructions](https://support.kount.com/hc/en-us/articles/360050779711-How-to-Integrate-the-Kount-iOS-SDK-into-an-Objective-C-App)
+Follow the instructions onthe developer.kount.com site:  https://developer.kount.com/hc/en-us/sections/5319287642260-Integration-Guide?article=4411149718676
