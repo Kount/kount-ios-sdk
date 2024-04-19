@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -44,7 +44,7 @@
 		7E7826B11CDA4D120008C69A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7E7826B71CDA4DD30008C69A /* CheckoutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckoutViewController.swift; sourceTree = "<group>"; };
 		7E7826BC1CDA50290008C69A /* CheckoutExampleSwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CheckoutExampleSwift-Bridging-Header.h"; path = "CheckoutExampleSwift/CheckoutExampleSwift-Bridging-Header.h"; sourceTree = "<group>"; };
-		AC278C4E29000C8E0026A068 /* KountDataCollector.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = KountDataCollector.xcframework; path = ../KountDataCollector.xcframework; sourceTree = "<group>"; };
+		AC278C4E29000C8E0026A068 /* KountDataCollector.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:62G3CSFCPV:Equifax Inc"; lastKnownFileType = wrapper.xcframework; name = KountDataCollector.xcframework; path = ../KountDataCollector.xcframework; sourceTree = "<group>"; };
 		AC36BCD028CB0BA50026ECEE /* CustomWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomWindow.m; sourceTree = "<group>"; };
 		AC36BCD128CB0BA50026ECEE /* UIViewController+TouchControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+TouchControl.m"; sourceTree = "<group>"; };
 		AC36BCD228CB0BA50026ECEE /* UIControl+CustomControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIControl+CustomControl.h"; sourceTree = "<group>"; };
@@ -153,7 +153,6 @@
 				TargetAttributes = {
 					7E7826A11CDA4D120008C69A = {
 						CreatedOnToolsVersion = 7.3;
-						DevelopmentTeam = 543BQA7L5F;
 						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
