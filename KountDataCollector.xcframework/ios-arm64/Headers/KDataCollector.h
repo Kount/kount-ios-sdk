@@ -77,7 +77,7 @@ typedef NS_ENUM(NSInteger, KEnvironment) {
 //
 
 // The Kount Merchant ID
-@property NSInteger merchantID;
+@property NSString* merchantID;
 // The configuration of the location collector to determine if and how it goes about collection location
 @property KLocationCollectorConfig locationCollectorConfig;
 // Debug logging to the console
@@ -98,7 +98,6 @@ typedef NS_ENUM(NSInteger, KEnvironment) {
 // @param sessionID A unique session ID that should match the sessionID for the payment transaction
 // @param completionBlock This completion block will be called when the collection has completed or an error occurs.
 - (void)collectForSession:(NSString *)sessionID completion:(nullable void (^)(NSString *_Nonnull sessionID, BOOL success, NSError *_Nullable error))completionBlock;
-
 NS_ASSUME_NONNULL_END
 
 @end

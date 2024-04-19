@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -48,7 +48,7 @@
 		7E7826881CD902180008C69A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7E7826961CD926830008C69A /* CheckoutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheckoutViewController.h; sourceTree = "<group>"; };
 		7E7826971CD926830008C69A /* CheckoutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheckoutViewController.m; sourceTree = "<group>"; };
-		AC278C5029000CA60026A068 /* KountDataCollector.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = KountDataCollector.xcframework; path = ../KountDataCollector.xcframework; sourceTree = "<group>"; };
+		AC278C5029000CA60026A068 /* KountDataCollector.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:62G3CSFCPV:Equifax Inc"; lastKnownFileType = wrapper.xcframework; name = KountDataCollector.xcframework; path = ../KountDataCollector.xcframework; sourceTree = "<group>"; };
 		AC36BCC628CB0B920026ECEE /* CustomWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomWindow.m; sourceTree = "<group>"; };
 		AC36BCC728CB0B920026ECEE /* UIViewController+TouchControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+TouchControl.m"; sourceTree = "<group>"; };
 		AC36BCC828CB0B920026ECEE /* UIControl+CustomControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIControl+CustomControl.h"; sourceTree = "<group>"; };
@@ -167,7 +167,6 @@
 				TargetAttributes = {
 					7E7826731CD902180008C69A = {
 						CreatedOnToolsVersion = 7.3;
-						DevelopmentTeam = 543BQA7L5F;
 						ProvisioningStyle = Automatic;
 					};
 				};
