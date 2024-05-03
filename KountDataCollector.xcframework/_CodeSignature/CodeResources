@@ -4,6 +4,10 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>.DS_Store</key>
+		<data>
+		YxPN6DaJJGNxrDmm1v7lejsdPFA=
+		</data>
 		<key>ios-arm64/Headers/KDataCollector.h</key>
 		<data>
 		OfpDdVTSt/6hIEnkewceFtZ7xJQ=
@@ -18,23 +22,23 @@
 		</data>
 		<key>ios-arm64/libKountDataCollector.a</key>
 		<data>
-		lxuY3JOEoryuGbYkof0C08R52Uw=
+		3sFdTmG9UiN3HHdsQZSxQgmNWlo=
 		</data>
-		<key>ios-x86_64-simulator/Headers/KDataCollector.h</key>
+		<key>ios-arm64_x86_64-simulator/Headers/KDataCollector.h</key>
 		<data>
 		OfpDdVTSt/6hIEnkewceFtZ7xJQ=
 		</data>
-		<key>ios-x86_64-simulator/Headers/KountAnalyticsViewController.h</key>
+		<key>ios-arm64_x86_64-simulator/Headers/KountAnalyticsViewController.h</key>
 		<data>
 		uOL22l070iPkF5GUjsWTkKJ8Et0=
 		</data>
-		<key>ios-x86_64-simulator/PrivacyInfo.xcprivacy</key>
+		<key>ios-arm64_x86_64-simulator/PrivacyInfo.xcprivacy</key>
 		<data>
 		S0RCMhpAvAgfQ9zm67B/EGTAdLA=
 		</data>
-		<key>ios-x86_64-simulator/libKountDataCollector.a</key>
+		<key>ios-arm64_x86_64-simulator/libKountDataCollector.a</key>
 		<data>
-		lN6Ab/7hMZRX5x+rrC/AAydTkOo=
+		MvHZ5KWlUlhc69r2O0WHu2NTJyY=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -76,14 +80,14 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			lxuY3JOEoryuGbYkof0C08R52Uw=
+			3sFdTmG9UiN3HHdsQZSxQgmNWlo=
 			</data>
 			<key>hash2</key>
 			<data>
-			K4e45HOp90p5XLou7WW37+r5QGshyUD7qIaqJLkF+sI=
+			WtQ2VI5ySnxv6YJlsq0Ln6qpihp2x0o8O1AwQBVQ+SY=
 			</data>
 		</dict>
-		<key>ios-x86_64-simulator/Headers/KDataCollector.h</key>
+		<key>ios-arm64_x86_64-simulator/Headers/KDataCollector.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -94,7 +98,7 @@
 			IA1B8wCuNbAduRFwc1UudPkp+J6SqJI8m8d51YgZgMY=
 			</data>
 		</dict>
-		<key>ios-x86_64-simulator/Headers/KountAnalyticsViewController.h</key>
+		<key>ios-arm64_x86_64-simulator/Headers/KountAnalyticsViewController.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -105,7 +109,7 @@
 			14+cMH+H34ZcQbAzGtXHw8X19I2oJNQrtAYluWEbesc=
 			</data>
 		</dict>
-		<key>ios-x86_64-simulator/PrivacyInfo.xcprivacy</key>
+		<key>ios-arm64_x86_64-simulator/PrivacyInfo.xcprivacy</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -116,15 +120,15 @@
 			FXu+nqqNrU9PCB9owm3uqk2eYy+eup6O4iO2AMbVtUk=
 			</data>
 		</dict>
-		<key>ios-x86_64-simulator/libKountDataCollector.a</key>
+		<key>ios-arm64_x86_64-simulator/libKountDataCollector.a</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			lN6Ab/7hMZRX5x+rrC/AAydTkOo=
+			MvHZ5KWlUlhc69r2O0WHu2NTJyY=
 			</data>
 			<key>hash2</key>
 			<data>
-			zpMSUjhjQ4NFBl8uj0jzCEuCKedjN/HZHEE/o2w7Xnk=
+			MV6DdYGIjuSngWcaQ0Ls8z1RxThmgcfhnUyd5LbnLYs=
 			</data>
 		</dict>
 	</dict>
