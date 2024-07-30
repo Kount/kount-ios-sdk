@@ -1,6 +1,5 @@
 #import "AppDelegate.h"
-#import "KDataCollector.h"
-#import "KountAnalyticsViewController.h"
+@import KountDataCollector;
 
 @implementation AppDelegate
 
@@ -11,7 +10,7 @@
     NSString *sessionID = nil;
     [[KDataCollector sharedCollector] setDebug:YES];
     // TODO Set your Merchant ID
-    [[KDataCollector sharedCollector] setMerchantID:@"0"];
+    [[KDataCollector sharedCollector] setMerchantID:@"900900"];
     // TODO Set the location collection configuration
     [[KDataCollector sharedCollector] setLocationCollectorConfig:KLocationCollectorConfigRequestPermission];
     // For a released app, you'll want to set this to KEnvironmentProduction

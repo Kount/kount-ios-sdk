@@ -1,0 +1,5 @@
+module KountDataCollector {
+    umbrella header "KountUmbrella.h"
+    requires ios
+    export *
+}

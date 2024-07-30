@@ -1,6 +1,6 @@
 #import <UIKit/UIKit.h>
 #import "CheckoutViewController.h"
-#import "KountAnalyticsViewController.h"
+@import KountDataCollector;
 
 @import CoreLocation;
 

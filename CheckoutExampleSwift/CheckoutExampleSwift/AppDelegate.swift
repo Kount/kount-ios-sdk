@@ -1,4 +1,5 @@
 import UIKit
+import KountDataCollector
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -14,7 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        sessionID = sessionID.replacingOccurrences(of: "-", with: "")
         KDataCollector.shared().debug = true
         // TODO Set your Merchant ID
-        KDataCollector.shared().merchantID = "0" // Insert your valid merchant ID
+        KDataCollector.shared().merchantID = "900900" // Insert your valid merchant ID
         // TODO Set the location collection configuration
         KDataCollector.shared().locationCollectorConfig = KLocationCollectorConfig.requestPermission
         // For a released app, you'll want to set this to KEnvironment.Production

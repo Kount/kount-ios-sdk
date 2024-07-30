@@ -1,4 +1,5 @@
 import UIKit
+import KountDataCollector
 
 class ViewController: KountAnalyticsViewController, CheckoutViewControllerDelegate  {
 
@@ -8,7 +9,7 @@ class ViewController: KountAnalyticsViewController, CheckoutViewControllerDelega
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        merchant!.text = String(format:"%ld", KDataCollector.shared().merchantID)
+        merchant!.text = KDataCollector.shared().merchantID
         
         switch KDataCollector.shared().environment {
         case KEnvironment.test:

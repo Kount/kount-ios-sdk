@@ -1,6 +1,5 @@
 #import "CheckoutViewController.h"
-#import "KDataCollector.h"
-
+@import KountDataCollector;
 @implementation CheckoutViewController
 
 - (void)viewDidAppear:(BOOL)animated

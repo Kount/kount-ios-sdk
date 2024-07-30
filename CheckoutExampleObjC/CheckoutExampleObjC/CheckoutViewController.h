@@ -1,6 +1,5 @@
 #import <UIKit/UIKit.h>
-#import "KountAnalyticsViewController.h"
-
+@import KountDataCollector;
 @class CheckoutViewController;
 
 @protocol CheckoutViewControllerDelegate <NSObject>

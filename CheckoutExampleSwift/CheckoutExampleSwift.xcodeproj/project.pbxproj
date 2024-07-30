@@ -43,7 +43,6 @@
 		7E7826AF1CDA4D120008C69A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7E7826B11CDA4D120008C69A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7E7826B71CDA4DD30008C69A /* CheckoutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckoutViewController.swift; sourceTree = "<group>"; };
-		7E7826BC1CDA50290008C69A /* CheckoutExampleSwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CheckoutExampleSwift-Bridging-Header.h"; path = "CheckoutExampleSwift/CheckoutExampleSwift-Bridging-Header.h"; sourceTree = "<group>"; };
 		AC278C4E29000C8E0026A068 /* KountDataCollector.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:62G3CSFCPV:Equifax Inc"; lastKnownFileType = wrapper.xcframework; name = KountDataCollector.xcframework; path = ../KountDataCollector.xcframework; sourceTree = "<group>"; };
 		AC36BCD028CB0BA50026ECEE /* CustomWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomWindow.m; sourceTree = "<group>"; };
 		AC36BCD128CB0BA50026ECEE /* UIViewController+TouchControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+TouchControl.m"; sourceTree = "<group>"; };
@@ -69,7 +68,6 @@
 			isa = PBXGroup;
 			children = (
 				AC278C4E29000C8E0026A068 /* KountDataCollector.xcframework */,
-				7E7826BC1CDA50290008C69A /* CheckoutExampleSwift-Bridging-Header.h */,
 				7E7826A41CDA4D120008C69A /* CheckoutExampleSwift */,
 				7E7826A31CDA4D120008C69A /* Products */,
 				ACFE764525CA80D900825D2C /* Frameworks */,
@@ -343,6 +341,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.kount.CheckoutExampleSwifts;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
@@ -368,6 +367,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.kount.CheckoutExampleSwifts;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 4.0;
 			};
 			name = Release;

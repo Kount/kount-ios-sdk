@@ -1,6 +1,5 @@
 #import "ViewController.h"
-#import "KDataCollector.h"
-
+@import KountDataCollector;
 @implementation ViewController
 
 - (void)viewDidLoad 
@@ -18,7 +17,7 @@
             self.environment.text = @"Unknown";
     }
     
-    self.merchant.text = [NSString stringWithFormat:@"%06ld", [[KDataCollector sharedCollector] merchantID]];
+    self.merchant.text = [[KDataCollector sharedCollector] merchantID];
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
