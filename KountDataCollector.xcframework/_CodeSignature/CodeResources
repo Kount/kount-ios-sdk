@@ -22,11 +22,11 @@
 		</data>
 		<key>ios-arm64/PrivacyInfo.xcprivacy</key>
 		<data>
-		S0RCMhpAvAgfQ9zm67B/EGTAdLA=
+		pGPCOm1V6JXOPl+fHvXI5LUqDwk=
 		</data>
 		<key>ios-arm64/libKountDataCollector.a</key>
 		<data>
-		Cpgto1j12y0H2q54IKKCjhnrCis=
+		R3AN8oZ5GBALBciQnRGamHm4s4U=
 		</data>
 		<key>ios-arm64_x86_64-simulator/Headers/KDataCollector.h</key>
 		<data>
@@ -46,11 +46,11 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/PrivacyInfo.xcprivacy</key>
 		<data>
-		S0RCMhpAvAgfQ9zm67B/EGTAdLA=
+		pGPCOm1V6JXOPl+fHvXI5LUqDwk=
 		</data>
 		<key>ios-arm64_x86_64-simulator/libKountDataCollector.a</key>
 		<data>
-		07dJKzga+TKmPmgqSko2jZoMHCQ=
+		2dcfeoj/Ini674jRgie3uWNegF4=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -103,22 +103,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			S0RCMhpAvAgfQ9zm67B/EGTAdLA=
+			pGPCOm1V6JXOPl+fHvXI5LUqDwk=
 			</data>
 			<key>hash2</key>
 			<data>
-			FXu+nqqNrU9PCB9owm3uqk2eYy+eup6O4iO2AMbVtUk=
+			ZnXhKxJ+0m719fl5VqR3mMKcBHAnDhPyKnbBAOUJ+o0=
 			</data>
 		</dict>
 		<key>ios-arm64/libKountDataCollector.a</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Cpgto1j12y0H2q54IKKCjhnrCis=
+			R3AN8oZ5GBALBciQnRGamHm4s4U=
 			</data>
 			<key>hash2</key>
 			<data>
-			w4PHkglBhOSiJRk+Rf9RS4eGQb2Cn2MTgOwyH1MsIn0=
+			wXk5SyCH5pcWulHxLkrSIvwwk5/2DixkbVhHOc3zjgE=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/Headers/KDataCollector.h</key>
@@ -169,22 +169,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			S0RCMhpAvAgfQ9zm67B/EGTAdLA=
+			pGPCOm1V6JXOPl+fHvXI5LUqDwk=
 			</data>
 			<key>hash2</key>
 			<data>
-			FXu+nqqNrU9PCB9owm3uqk2eYy+eup6O4iO2AMbVtUk=
+			ZnXhKxJ+0m719fl5VqR3mMKcBHAnDhPyKnbBAOUJ+o0=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/libKountDataCollector.a</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			07dJKzga+TKmPmgqSko2jZoMHCQ=
+			2dcfeoj/Ini674jRgie3uWNegF4=
 			</data>
 			<key>hash2</key>
 			<data>
-			iSOKtLEZTWwuvkjs1FbXR8O8kYT2CMoBAaQeqyRbiAI=
+			dAzo1I7m5NbmK4rlK1zDxGT3LmX+m1/EMcrrcb8yMuU=
 			</data>
 		</dict>
 	</dict>

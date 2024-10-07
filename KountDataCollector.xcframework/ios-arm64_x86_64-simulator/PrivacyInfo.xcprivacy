@@ -79,14 +79,5 @@
 			</array>
 		</dict>
 	</array>
-	<key>NSPrivacyAccessedAPITypes</key>
-	<array>
-		<dict>
-			<key>NSPrivacyAccessedAPITypeReasons</key>
-			<array/>
-			<key>NSPrivacyAccessedAPIType</key>
-			<string></string>
-		</dict>
-	</array>
 </dict>
 </plist>
