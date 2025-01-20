@@ -1,0 +1,33 @@
+{
+  "configurations" : [
+    {
+      "id" : "65B74D38-50BB-4BC8-ACE3-10C4EF2E378C",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "codeCoverage" : {
+      "targets" : [
+        {
+          "containerPath" : "container:SampleAppSwift.xcodeproj",
+          "identifier" : "B43CB40F2AE2E90D001E65A7",
+          "name" : "SampleAppSwift"
+        }
+      ]
+    }
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:SampleAppSwift.xcodeproj",
+        "identifier" : "B43CB4252AE2E90F001E65A7",
+        "name" : "SampleAppSwiftTests"
+      }
+    }
+  ],
+  "version" : 1
+}

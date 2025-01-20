@@ -1,0 +1,13 @@
+//
+//  debug-common.xcconfig
+//  KountDataCollector
+//
+//  Created by Mario Espinoza on 16-08-23.
+//  Copyright © 2023 Kount Inc. All rights reserved.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+GCC_TREAT_IMPLICIT_FUNCTION_DECLARATIONS_AS_ERRORS = YES;
+GCC_TREAT_INCOMPATIBLE_POINTER_TYPE_WARNINGS_AS_ERRORS = YES;
+GCC_TREAT_WARNINGS_AS_ERRORS = NO;

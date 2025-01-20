@@ -1,0 +1,62 @@
+/* 
+  Localizable.strings
+  SampleAppSwift
+
+  Created by Felipe Plaza on 22-11-23.
+  
+*/
+
+//MARK: General
+"start_button" = "开始测试";
+"stop_button" = "停止测试";
+"back_button" = "返回";
+"change_language_title" = "更改语言";
+
+//MARK: CoreMotion
+"loading_sensor_text" = "加载传感器";
+"core_motion_title" = "Core Motion";
+"core_motion_configuration" = "传感器配置";
+"accelerometer_title" = "加速计";
+"gyro_title" = "陀螺仪";
+"magnetometer_title" = "磁力计";
+"device_motion_title" = "设备运动";
+"pedometer_title" = "计步器";
+"core_motion_data_title" = "核心运动数据";
+"accelerometer_data_title" = "加速计数据";
+"gyro_data_title" = "陀螺仪数据";
+"magnetometer_data_title" = "磁力计数据:";
+"device_motion_data_title" = "设备运动数据:";
+"pedometer_data_title" = "计步器数据:";
+"acceleration_x_text" = "加速度 X: %@";
+"acceleration_y_text" = "加速度 Y: %@";
+"acceleration_z_text" = "加速度 Z: %@";
+"acceleration_position_text" = "位置：%@";
+"rotation_rate_x_text" = "旋转速率 X：%@";
+"rotation_rate_y_text" = "旋转速率 Y: %@";
+"rotation_rate_z_text" = "旋转速率 Z: %@";
+"rotation_rate_position_text" = "职位： %@";
+"magnetic_field_x_text" = "磁场 X: %@";
+"magnetic_field_y_text" = "磁场 Y: %@";
+"magnetic_field_z_text" = "磁场 Z: %@";
+"attitude_title" = "姿态角：";
+"attitude_angle_yaw_text" = "偏航：%@";
+"attitude_angle_roll_text" = "Roll: %@";
+"attitude_angle_pitch_text" = "Pitch: %@";
+"attitude_angle_heading_text" = "Heading： %@";
+"gravity_title" = "重力：";
+"gravity_x_text" = "X: %@";
+"gravity_y_text" = "Y: %@";
+"gravity_z_text" = "Z: %@";
+"pedometer_step_text" = "计步器：%d";
+"motion_state_text" = "运动状态：%@";
+"horizontal_position_text" = "手机处于水平位置";
+"vertical_position_text" = "手机处于垂直位置";
+"tilted_position_text" = "手机处于倾斜位置";
+"landscape_position_text" = "手机处于横向位置";
+"rotated_position_text" = "手机正在旋转";
+"still_position_text" = "手机处于静止状态";
+"motion_state_stationary_text" = "运动状态： 静止";
+"motion_state_walking_text" = "运动状态： 步行";
+"motion_state_running_text" = "运动状态： 运行";
+"motion_state_automotive_text" = "运动状态： 汽车";
+"motion_state_cycling_text" = "运动状态： 循环";

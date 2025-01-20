@@ -1,0 +1,62 @@
+/* 
+  Localizable.strings
+  SampleAppSwift
+
+  Created by Felipe Plaza on 22-11-23.
+  
+*/
+
+//MARK: General
+"start_button" = "START TEST" ;
+"stop_button" = "STOP TEST" ;
+"back_button" = "Retour" ;
+"change_language_title" = "Changer de Langue";
+
+//MARK: CoreMotion
+"loading_sensor_text" = "Capteurs de chargement" ;
+"core_motion_title" = "Core Motion" ;
+"core_motion_configuration" = "Configuration des capteurs" ;
+"accelerometer_title" = "Accéléromètre" ;
+"gyro_title" = "Gyro" ;
+"magnetometer_title" = "Magnetometer" ;
+"device_motion_title" = "Device motion" ;
+"pedometer_title" = "Podomètre" ;
+"core_motion_data_title" = "Core Motion data" ;
+"accelerometer_data_title" = "Accelerometer data:";
+"gyro_data_title" = "Données du gyroscope:";
+"magnetometer_data_title" = "Magnetometer data:";
+"device_motion_data_title" = "Données de mouvement de l'appareil:";
+"pedometer_data_title" = "Données du podomètre:";
+"acceleration_x_text" = "Accélération X: %@" ;
+"acceleration_y_text" = "Accélération Y: %@" ;
+"acceleration_z_text" = "Accélération Z: %@" ;
+"acceleration_position_text" = "Position: %@" ;
+"rotation_rate_x_text" = "Taux de rotation X: %@" ;
+"rotation_rate_y_text" = "Taux de rotation Y: %@" ;
+"rotation_rate_z_text" = "Taux de rotation Z: %@" ;
+"rotation_rate_position_text" = "Posición: %@" ;
+"magnetic_field_x_text" = "Champ magnétique X: %@" ;
+"magnetic_field_y_text" = "Champ magnétique Y: %@" ;
+"magnetic_field_z_text" = "Champ magnétique Z: %@" ;
+"attitude_title" = "Angle d'attitude:";
+"attitude_angle_yaw_text" = "Yaw: %@" ;
+"attitude_angle_roll_text" = "Roulis: %@" ;
+"attitude_angle_pitch_text" = "Tangage: %@" ;
+"attitude_angle_heading_text" = "Heading: %@" ;
+"gravity_title" = "Gravity :";
+"gravity_x_text" = "X: %@" ;
+"gravity_y_text" = "Y: %@" ;
+"gravity_z_text" = "Z: %@" ;
+"pedometer_step_text" = "Compteur de pas: %d" ;
+"motion_state_text" = "État du mouvement: %@" ;
+"horizontal_position_text" = "Le téléphone est en position horizontale" ;
+"vertical_position_text" = "Le téléphone est en position verticale" ;
+"tilted_position_text" = "Le téléphone est en position inclinée" ;
+"landscape_position_text" = "Le téléphone est en position paysage" ;
+"rotated_position_text" = "Le téléphone est en position de rotation" ;
+"still_position_text" = "Le téléphone est immobile" ;
+"motion_state_stationary_text" = "État du mouvement: Stationnaire" ;
+"motion_state_walking_text" = "État du mouvement: Marche" ;
+"motion_state_running_text" = "État du mouvement: Courant" ;
+"motion_state_automotive_text" = "État du mouvement: Automobile" ;
+"motion_state_cycling_text" = "État du mouvement: Cycling" ;

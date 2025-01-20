@@ -1,0 +1,911 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		7E8390101C7D14F50094F7B7 /* UniversalLibrary */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 7E8390131C7D14F50094F7B7 /* Build configuration list for PBXAggregateTarget "UniversalLibrary" */;
+			buildPhases = (
+				7E6D648C1C7E0CAE00289BDF /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = UniversalLibrary;
+			productName = UniversalLibrary;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		623F75E12BF400C400A595CB /* module.modulemap in CopyFiles */ = {isa = PBXBuildFile; fileRef = 623F75E02BF4006A00A595CB /* module.modulemap */; };
+		62D128FB2B07E97700DF086F /* CustomWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = ACDB7CE3252D822A006DDD02 /* CustomWindow.m */; };
+		62D128FC2B07E97A00DF086F /* UIControl+CustomControl.m in Sources */ = {isa = PBXBuildFile; fileRef = ACDB7CE8252D822A006DDD02 /* UIControl+CustomControl.m */; };
+		62D128FD2B07E97C00DF086F /* UIViewController+TouchControl.m in Sources */ = {isa = PBXBuildFile; fileRef = ACDB7CE4252D822A006DDD02 /* UIViewController+TouchControl.m */; };
+		62D128FE2B07E97F00DF086F /* PostPayloadKeys.m in Sources */ = {isa = PBXBuildFile; fileRef = ACDB7CD4252D815A006DDD02 /* PostPayloadKeys.m */; };
+		62D128FF2B07E98200DF086F /* DeviceDataPayload.m in Sources */ = {isa = PBXBuildFile; fileRef = ACDB7CD9252D815B006DDD02 /* DeviceDataPayload.m */; };
+		62D129002B07E98400DF086F /* PostRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = ACDB7CD3252D815A006DDD02 /* PostRequest.m */; };
+		62D129012B07E98800DF086F /* KountAnalyticsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACDB7CD2252D815A006DDD02 /* KountAnalyticsViewController.m */; };
+		62D129022B07E98A00DF086F /* StoreUIContolsData.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA6B7AA25BE80CC0039CB4E /* StoreUIContolsData.m */; };
+		7E820E2D1C73CFEC0029A8B6 /* KDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E820E2B1C73CFEC0029A8B6 /* KDictionary.m */; };
+		7E820E311C73D3470029A8B6 /* KString.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E820E2F1C73D3470029A8B6 /* KString.m */; };
+		7E820E3D1C74F4D00029A8B6 /* libKountDataCollector.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EFEBB751C5A8122005348AA /* libKountDataCollector.a */; };
+		7E820E441C7621430029A8B6 /* KFingerprintCollectorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E820E431C7621430029A8B6 /* KFingerprintCollectorTests.m */; };
+		7E820E461C76235D0029A8B6 /* KLocationCollectorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E820E451C76235D0029A8B6 /* KLocationCollectorTests.m */; };
+		7E820E481C76236D0029A8B6 /* KSystemCollectorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E820E471C76236D0029A8B6 /* KSystemCollectorTests.m */; };
+		7E820E4C1C7623900029A8B6 /* KDataCollectorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E820E4B1C7623900029A8B6 /* KDataCollectorTests.m */; };
+		7E820E4E1C7623A60029A8B6 /* KDictionaryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E820E4D1C7623A60029A8B6 /* KDictionaryTests.m */; };
+		7E820E501C7B9CCB0029A8B6 /* KCollectorTaskBaseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E820E4F1C7B9CCB0029A8B6 /* KCollectorTaskBaseTests.m */; };
+		7E838FFF1C7CCCFD0094F7B7 /* KFingerprintCollectorMock.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E838FFD1C7CCCED0094F7B7 /* KFingerprintCollectorMock.m */; };
+		7E8390001C7CCD040094F7B7 /* KLocationCollectorMock.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EFAFD0F1C7CB9660058D162 /* KLocationCollectorMock.m */; };
+		7E8390041C7CE7F80094F7B7 /* KDataCollectorMock.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E8390031C7CE7F80094F7B7 /* KDataCollectorMock.m */; };
+		7E8390071C7CE9F50094F7B7 /* KCollectorTaskBaseMock.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E8390061C7CE9F50094F7B7 /* KCollectorTaskBaseMock.m */; };
+		7EFEBBC71C5A84F4005348AA /* KDataCollector.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EFEBBB81C5A84F4005348AA /* KDataCollector.m */; };
+		7EFEBBC91C5A84F4005348AA /* KCollectorTaskBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EFEBBBD1C5A84F4005348AA /* KCollectorTaskBase.m */; };
+		7EFEBBCA1C5A84F4005348AA /* KSystemCollector.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EFEBBBF1C5A84F4005348AA /* KSystemCollector.m */; };
+		7EFEBBCB1C5A84F4005348AA /* KLocationCollector.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EFEBBC11C5A84F4005348AA /* KLocationCollector.m */; };
+		7EFEBBCC1C5A84F4005348AA /* KFingerprintCollector.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EFEBBC31C5A84F4005348AA /* KFingerprintCollector.m */; };
+		7EFEBBD91C5A9F2A005348AA /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EFEBBD81C5A9F2A005348AA /* CoreLocation.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		7EFEBBDC1C5AAFCB005348AA /* KDataCollector.h in Headers */ = {isa = PBXBuildFile; fileRef = 7EFEBBB71C5A84F4005348AA /* KDataCollector.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ACA6B7AB25BE80CC0039CB4E /* StoreUIContolsData.h in Headers */ = {isa = PBXBuildFile; fileRef = ACA6B7A925BE80CC0039CB4E /* StoreUIContolsData.h */; };
+		ACA6B7AC25BE80CC0039CB4E /* StoreUIContolsData.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA6B7AA25BE80CC0039CB4E /* StoreUIContolsData.m */; };
+		ACDB7CDA252D815B006DDD02 /* KountAnalyticsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACDB7CD2252D815A006DDD02 /* KountAnalyticsViewController.m */; };
+		ACDB7CDB252D815B006DDD02 /* PostRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = ACDB7CD3252D815A006DDD02 /* PostRequest.m */; };
+		ACDB7CDC252D815B006DDD02 /* PostPayloadKeys.m in Sources */ = {isa = PBXBuildFile; fileRef = ACDB7CD4252D815A006DDD02 /* PostPayloadKeys.m */; };
+		ACDB7CDD252D815B006DDD02 /* DeviceDataPayload.h in Headers */ = {isa = PBXBuildFile; fileRef = ACDB7CD5252D815A006DDD02 /* DeviceDataPayload.h */; };
+		ACDB7CDE252D815B006DDD02 /* PostPayloadKeys.h in Headers */ = {isa = PBXBuildFile; fileRef = ACDB7CD6252D815A006DDD02 /* PostPayloadKeys.h */; };
+		ACDB7CDF252D815B006DDD02 /* PostRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = ACDB7CD7252D815A006DDD02 /* PostRequest.h */; };
+		ACDB7CE0252D815B006DDD02 /* KountAnalyticsViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = ACDB7CD8252D815B006DDD02 /* KountAnalyticsViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ACDB7CE1252D815B006DDD02 /* DeviceDataPayload.m in Sources */ = {isa = PBXBuildFile; fileRef = ACDB7CD9252D815B006DDD02 /* DeviceDataPayload.m */; };
+		ACDB7CE9252D822A006DDD02 /* CustomWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = ACDB7CE3252D822A006DDD02 /* CustomWindow.m */; };
+		ACDB7CEA252D822A006DDD02 /* UIViewController+TouchControl.m in Sources */ = {isa = PBXBuildFile; fileRef = ACDB7CE4252D822A006DDD02 /* UIViewController+TouchControl.m */; };
+		ACDB7CEB252D822A006DDD02 /* UIControl+CustomControl.h in Headers */ = {isa = PBXBuildFile; fileRef = ACDB7CE5252D822A006DDD02 /* UIControl+CustomControl.h */; };
+		ACDB7CEC252D822A006DDD02 /* CustomWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = ACDB7CE6252D822A006DDD02 /* CustomWindow.h */; };
+		ACDB7CED252D822A006DDD02 /* UIViewController+TouchControl.h in Headers */ = {isa = PBXBuildFile; fileRef = ACDB7CE7252D822A006DDD02 /* UIViewController+TouchControl.h */; };
+		ACDB7CEE252D822A006DDD02 /* UIControl+CustomControl.m in Sources */ = {isa = PBXBuildFile; fileRef = ACDB7CE8252D822A006DDD02 /* UIControl+CustomControl.m */; };
+		B40003FB2C3C336700B06626 /* KountUmbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B40003FA2C3C336700B06626 /* KountUmbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B416E3C72B5EAFB700FC0D39 /* RegExValidation.m in Sources */ = {isa = PBXBuildFile; fileRef = B416E3C62B5EAE2900FC0D39 /* RegExValidation.m */; };
+		B43323102B9B7FA000C35B46 /* DebugMessages.m in Sources */ = {isa = PBXBuildFile; fileRef = B433230F2B9B7EC400C35B46 /* DebugMessages.m */; };
+		B45CD69D2BA0DAA5000E161D /* NetworkValidationMock.m in Sources */ = {isa = PBXBuildFile; fileRef = B45CD69C2BA0D9E8000E161D /* NetworkValidationMock.m */; };
+		B46877AF2BBF18BD009A25D8 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = B46877AC2BBF18B1009A25D8 /* PrivacyInfo.xcprivacy */; };
+		B46877B02BBF18C4009A25D8 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = B46877AC2BBF18B1009A25D8 /* PrivacyInfo.xcprivacy */; };
+		B4F0FCAF2B9F939000DD048A /* CompletionBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = B4F0FCAE2B9F937700DD048A /* CompletionBlock.m */; };
+		B4F0FCB32BA083B500DD048A /* ErrorHandling.m in Sources */ = {isa = PBXBuildFile; fileRef = B4F0FCB22BA083B500DD048A /* ErrorHandling.m */; };
+		B4F0FCB62BA096D100DD048A /* NetworkValidation.m in Sources */ = {isa = PBXBuildFile; fileRef = B4F0FCB52BA096D100DD048A /* NetworkValidation.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7E820E3E1C74F4D00029A8B6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7EFEBB6D1C5A8122005348AA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7EFEBB741C5A8122005348AA;
+			remoteInfo = KountDataCollector;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7EFEBB731C5A8122005348AA /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				623F75E12BF400C400A595CB /* module.modulemap in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0B75C721F854DD800A6CB37 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		5A7DF0FF2B9BC54400787371 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		623F75E02BF4006A00A595CB /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
+		7E820E2A1C73CFEC0029A8B6 /* KDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KDictionary.h; sourceTree = "<group>"; };
+		7E820E2B1C73CFEC0029A8B6 /* KDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KDictionary.m; sourceTree = "<group>"; };
+		7E820E2E1C73D3470029A8B6 /* KString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KString.h; sourceTree = "<group>"; };
+		7E820E2F1C73D3470029A8B6 /* KString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KString.m; sourceTree = "<group>"; };
+		7E820E381C74F4D00029A8B6 /* KountDataCollectorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KountDataCollectorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E820E3C1C74F4D00029A8B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7E820E431C7621430029A8B6 /* KFingerprintCollectorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KFingerprintCollectorTests.m; sourceTree = "<group>"; };
+		7E820E451C76235D0029A8B6 /* KLocationCollectorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLocationCollectorTests.m; sourceTree = "<group>"; };
+		7E820E471C76236D0029A8B6 /* KSystemCollectorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSystemCollectorTests.m; sourceTree = "<group>"; };
+		7E820E4B1C7623900029A8B6 /* KDataCollectorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KDataCollectorTests.m; sourceTree = "<group>"; };
+		7E820E4D1C7623A60029A8B6 /* KDictionaryTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KDictionaryTests.m; sourceTree = "<group>"; };
+		7E820E4F1C7B9CCB0029A8B6 /* KCollectorTaskBaseTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCollectorTaskBaseTests.m; sourceTree = "<group>"; };
+		7E838FFC1C7CCCDD0094F7B7 /* KFingerprintCollectorMock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KFingerprintCollectorMock.h; sourceTree = "<group>"; };
+		7E838FFD1C7CCCED0094F7B7 /* KFingerprintCollectorMock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KFingerprintCollectorMock.m; sourceTree = "<group>"; };
+		7E8390021C7CE7E50094F7B7 /* KDataCollectorMock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KDataCollectorMock.h; sourceTree = "<group>"; };
+		7E8390031C7CE7F80094F7B7 /* KDataCollectorMock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KDataCollectorMock.m; sourceTree = "<group>"; };
+		7E8390051C7CE9E50094F7B7 /* KCollectorTaskBaseMock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KCollectorTaskBaseMock.h; sourceTree = "<group>"; };
+		7E8390061C7CE9F50094F7B7 /* KCollectorTaskBaseMock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCollectorTaskBaseMock.m; sourceTree = "<group>"; };
+		7EBEC0861C5FE52000D55183 /* KDataCollector_Internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KDataCollector_Internal.h; sourceTree = "<group>"; };
+		7EFAFD0E1C7CB9460058D162 /* KLocationCollectorMock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KLocationCollectorMock.h; sourceTree = "<group>"; };
+		7EFAFD0F1C7CB9660058D162 /* KLocationCollectorMock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLocationCollectorMock.m; sourceTree = "<group>"; };
+		7EFBC9591C6B90ED0033D35F /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		7EFBC95B1C6B91130033D35F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		7EFEBB751C5A8122005348AA /* libKountDataCollector.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libKountDataCollector.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		7EFEBBB71C5A84F4005348AA /* KDataCollector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KDataCollector.h; sourceTree = "<group>"; };
+		7EFEBBB81C5A84F4005348AA /* KDataCollector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KDataCollector.m; sourceTree = "<group>"; };
+		7EFEBBBC1C5A84F4005348AA /* KCollectorTaskBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCollectorTaskBase.h; sourceTree = "<group>"; };
+		7EFEBBBD1C5A84F4005348AA /* KCollectorTaskBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCollectorTaskBase.m; sourceTree = "<group>"; };
+		7EFEBBBE1C5A84F4005348AA /* KSystemCollector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSystemCollector.h; sourceTree = "<group>"; };
+		7EFEBBBF1C5A84F4005348AA /* KSystemCollector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSystemCollector.m; sourceTree = "<group>"; };
+		7EFEBBC01C5A84F4005348AA /* KLocationCollector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLocationCollector.h; sourceTree = "<group>"; };
+		7EFEBBC11C5A84F4005348AA /* KLocationCollector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLocationCollector.m; sourceTree = "<group>"; };
+		7EFEBBC21C5A84F4005348AA /* KFingerprintCollector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KFingerprintCollector.h; sourceTree = "<group>"; };
+		7EFEBBC31C5A84F4005348AA /* KFingerprintCollector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KFingerprintCollector.m; sourceTree = "<group>"; };
+		7EFEBBD81C5A9F2A005348AA /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		ACA6B7A925BE80CC0039CB4E /* StoreUIContolsData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StoreUIContolsData.h; sourceTree = "<group>"; };
+		ACA6B7AA25BE80CC0039CB4E /* StoreUIContolsData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StoreUIContolsData.m; sourceTree = "<group>"; };
+		ACDB7CD2252D815A006DDD02 /* KountAnalyticsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KountAnalyticsViewController.m; sourceTree = "<group>"; };
+		ACDB7CD3252D815A006DDD02 /* PostRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostRequest.m; sourceTree = "<group>"; };
+		ACDB7CD4252D815A006DDD02 /* PostPayloadKeys.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostPayloadKeys.m; sourceTree = "<group>"; };
+		ACDB7CD5252D815A006DDD02 /* DeviceDataPayload.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceDataPayload.h; sourceTree = "<group>"; };
+		ACDB7CD6252D815A006DDD02 /* PostPayloadKeys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostPayloadKeys.h; sourceTree = "<group>"; };
+		ACDB7CD7252D815A006DDD02 /* PostRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostRequest.h; sourceTree = "<group>"; };
+		ACDB7CD8252D815B006DDD02 /* KountAnalyticsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KountAnalyticsViewController.h; sourceTree = "<group>"; };
+		ACDB7CD9252D815B006DDD02 /* DeviceDataPayload.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceDataPayload.m; sourceTree = "<group>"; };
+		ACDB7CE3252D822A006DDD02 /* CustomWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomWindow.m; sourceTree = "<group>"; };
+		ACDB7CE4252D822A006DDD02 /* UIViewController+TouchControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+TouchControl.m"; sourceTree = "<group>"; };
+		ACDB7CE5252D822A006DDD02 /* UIControl+CustomControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIControl+CustomControl.h"; sourceTree = "<group>"; };
+		ACDB7CE6252D822A006DDD02 /* CustomWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomWindow.h; sourceTree = "<group>"; };
+		ACDB7CE7252D822A006DDD02 /* UIViewController+TouchControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+TouchControl.h"; sourceTree = "<group>"; };
+		ACDB7CE8252D822A006DDD02 /* UIControl+CustomControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIControl+CustomControl.m"; sourceTree = "<group>"; };
+		B40003FA2C3C336700B06626 /* KountUmbrella.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KountUmbrella.h; sourceTree = "<group>"; };
+		B416E3C52B5EAD3200FC0D39 /* RegExValidation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RegExValidation.h; sourceTree = "<group>"; };
+		B416E3C62B5EAE2900FC0D39 /* RegExValidation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RegExValidation.m; sourceTree = "<group>"; };
+		B433230E2B9B7E2A00C35B46 /* DebugMessages.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DebugMessages.h; sourceTree = "<group>"; };
+		B433230F2B9B7EC400C35B46 /* DebugMessages.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DebugMessages.m; sourceTree = "<group>"; };
+		B45CD69B2BA0D948000E161D /* NetworkValidationMock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkValidationMock.h; sourceTree = "<group>"; };
+		B45CD69C2BA0D9E8000E161D /* NetworkValidationMock.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetworkValidationMock.m; sourceTree = "<group>"; };
+		B46877AC2BBF18B1009A25D8 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		B4F0FCAD2B9F92DD00DD048A /* CompletionBlock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CompletionBlock.h; sourceTree = "<group>"; };
+		B4F0FCAE2B9F937700DD048A /* CompletionBlock.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CompletionBlock.m; sourceTree = "<group>"; };
+		B4F0FCB12BA0813D00DD048A /* ErrorHandling.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ErrorHandling.h; sourceTree = "<group>"; };
+		B4F0FCB22BA083B500DD048A /* ErrorHandling.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ErrorHandling.m; sourceTree = "<group>"; };
+		B4F0FCB42BA0957300DD048A /* NetworkValidation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkValidation.h; sourceTree = "<group>"; };
+		B4F0FCB52BA096D100DD048A /* NetworkValidation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetworkValidation.m; sourceTree = "<group>"; };
+		F0B75C741F854DD800A6CB37 /* liblibKountDataCollector.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = liblibKountDataCollector.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7E820E351C74F4D00029A8B6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E820E3D1C74F4D00029A8B6 /* libKountDataCollector.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7EFEBB721C5A8122005348AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EFEBBD91C5A9F2A005348AA /* CoreLocation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0B75C711F854DD800A6CB37 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7E820E321C73D4530029A8B6 /* Helper Classes */ = {
+			isa = PBXGroup;
+			children = (
+				7E820E2A1C73CFEC0029A8B6 /* KDictionary.h */,
+				7E820E2B1C73CFEC0029A8B6 /* KDictionary.m */,
+				7E820E2E1C73D3470029A8B6 /* KString.h */,
+				7E820E2F1C73D3470029A8B6 /* KString.m */,
+			);
+			name = "Helper Classes";
+			sourceTree = "<group>";
+		};
+		7E820E331C74CA3F0029A8B6 /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				B40003F92C3C330100B06626 /* Modules */,
+				ACDB7CE2252D822A006DDD02 /* TouchControls */,
+				ACDB7CD1252D815A006DDD02 /* AnalyticsDataCollector */,
+				7EFEBBB71C5A84F4005348AA /* KDataCollector.h */,
+				B40003FA2C3C336700B06626 /* KountUmbrella.h */,
+			);
+			name = Public;
+			sourceTree = "<group>";
+		};
+		7E820E391C74F4D00029A8B6 /* LibraryTests */ = {
+			isa = PBXGroup;
+			children = (
+				7E820E3C1C74F4D00029A8B6 /* Info.plist */,
+				7E8390051C7CE9E50094F7B7 /* KCollectorTaskBaseMock.h */,
+				7E8390061C7CE9F50094F7B7 /* KCollectorTaskBaseMock.m */,
+				7E820E4F1C7B9CCB0029A8B6 /* KCollectorTaskBaseTests.m */,
+				7E8390021C7CE7E50094F7B7 /* KDataCollectorMock.h */,
+				7E8390031C7CE7F80094F7B7 /* KDataCollectorMock.m */,
+				7E820E4B1C7623900029A8B6 /* KDataCollectorTests.m */,
+				7E820E4D1C7623A60029A8B6 /* KDictionaryTests.m */,
+				7E838FFC1C7CCCDD0094F7B7 /* KFingerprintCollectorMock.h */,
+				7E838FFD1C7CCCED0094F7B7 /* KFingerprintCollectorMock.m */,
+				7E820E431C7621430029A8B6 /* KFingerprintCollectorTests.m */,
+				7EFAFD0E1C7CB9460058D162 /* KLocationCollectorMock.h */,
+				7EFAFD0F1C7CB9660058D162 /* KLocationCollectorMock.m */,
+				7E820E451C76235D0029A8B6 /* KLocationCollectorTests.m */,
+				7E820E471C76236D0029A8B6 /* KSystemCollectorTests.m */,
+				B45CD69B2BA0D948000E161D /* NetworkValidationMock.h */,
+				B45CD69C2BA0D9E8000E161D /* NetworkValidationMock.m */,
+			);
+			name = LibraryTests;
+			path = KountDataCollectorTests;
+			sourceTree = "<group>";
+		};
+		7EA3E2781C60FBA6008EE585 /* Collectors */ = {
+			isa = PBXGroup;
+			children = (
+				7EFEBBBC1C5A84F4005348AA /* KCollectorTaskBase.h */,
+				7EFEBBBD1C5A84F4005348AA /* KCollectorTaskBase.m */,
+				7EFEBBC21C5A84F4005348AA /* KFingerprintCollector.h */,
+				7EFEBBC31C5A84F4005348AA /* KFingerprintCollector.m */,
+				7EFEBBC01C5A84F4005348AA /* KLocationCollector.h */,
+				7EFEBBC11C5A84F4005348AA /* KLocationCollector.m */,
+				7EFEBBBE1C5A84F4005348AA /* KSystemCollector.h */,
+				7EFEBBBF1C5A84F4005348AA /* KSystemCollector.m */,
+			);
+			name = Collectors;
+			sourceTree = "<group>";
+		};
+		7EFEBB6C1C5A8122005348AA = {
+			isa = PBXGroup;
+			children = (
+				5A7DF0FF2B9BC54400787371 /* Info.plist */,
+				7EFEBB771C5A8122005348AA /* Library */,
+				7E820E391C74F4D00029A8B6 /* LibraryTests */,
+				7EFEBBDA1C5AAC86005348AA /* Frameworks */,
+				7EFEBB761C5A8122005348AA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7EFEBB761C5A8122005348AA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7EFEBB751C5A8122005348AA /* libKountDataCollector.a */,
+				7E820E381C74F4D00029A8B6 /* KountDataCollectorTests.xctest */,
+				F0B75C741F854DD800A6CB37 /* liblibKountDataCollector.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7EFEBB771C5A8122005348AA /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				B46877962BBEED40009A25D8 /* Resources */,
+				7E820E331C74CA3F0029A8B6 /* Public */,
+				7EBEC0861C5FE52000D55183 /* KDataCollector_Internal.h */,
+				7EFEBBB81C5A84F4005348AA /* KDataCollector.m */,
+				7E820E321C73D4530029A8B6 /* Helper Classes */,
+				B416E3C42B5EACF600FC0D39 /* Util Classes */,
+				7EA3E2781C60FBA6008EE585 /* Collectors */,
+			);
+			name = Library;
+			path = KountDataCollector;
+			sourceTree = "<group>";
+		};
+		7EFEBBDA1C5AAC86005348AA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7EFBC95B1C6B91130033D35F /* Foundation.framework */,
+				7EFBC9591C6B90ED0033D35F /* SystemConfiguration.framework */,
+				7EFEBBD81C5A9F2A005348AA /* CoreLocation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ACDB7CD1252D815A006DDD02 /* AnalyticsDataCollector */ = {
+			isa = PBXGroup;
+			children = (
+				ACDB7CD6252D815A006DDD02 /* PostPayloadKeys.h */,
+				ACDB7CD4252D815A006DDD02 /* PostPayloadKeys.m */,
+				ACDB7CD5252D815A006DDD02 /* DeviceDataPayload.h */,
+				ACDB7CD9252D815B006DDD02 /* DeviceDataPayload.m */,
+				ACDB7CD7252D815A006DDD02 /* PostRequest.h */,
+				ACDB7CD3252D815A006DDD02 /* PostRequest.m */,
+				ACDB7CD8252D815B006DDD02 /* KountAnalyticsViewController.h */,
+				ACDB7CD2252D815A006DDD02 /* KountAnalyticsViewController.m */,
+				ACA6B7A925BE80CC0039CB4E /* StoreUIContolsData.h */,
+				ACA6B7AA25BE80CC0039CB4E /* StoreUIContolsData.m */,
+			);
+			path = AnalyticsDataCollector;
+			sourceTree = "<group>";
+		};
+		ACDB7CE2252D822A006DDD02 /* TouchControls */ = {
+			isa = PBXGroup;
+			children = (
+				ACDB7CE6252D822A006DDD02 /* CustomWindow.h */,
+				ACDB7CE3252D822A006DDD02 /* CustomWindow.m */,
+				ACDB7CE5252D822A006DDD02 /* UIControl+CustomControl.h */,
+				ACDB7CE8252D822A006DDD02 /* UIControl+CustomControl.m */,
+				ACDB7CE7252D822A006DDD02 /* UIViewController+TouchControl.h */,
+				ACDB7CE4252D822A006DDD02 /* UIViewController+TouchControl.m */,
+			);
+			path = TouchControls;
+			sourceTree = "<group>";
+		};
+		B40003F92C3C330100B06626 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				623F75E02BF4006A00A595CB /* module.modulemap */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		B416E3C42B5EACF600FC0D39 /* Util Classes */ = {
+			isa = PBXGroup;
+			children = (
+				B416E3C52B5EAD3200FC0D39 /* RegExValidation.h */,
+				B416E3C62B5EAE2900FC0D39 /* RegExValidation.m */,
+				B433230E2B9B7E2A00C35B46 /* DebugMessages.h */,
+				B433230F2B9B7EC400C35B46 /* DebugMessages.m */,
+				B4F0FCAD2B9F92DD00DD048A /* CompletionBlock.h */,
+				B4F0FCAE2B9F937700DD048A /* CompletionBlock.m */,
+				B4F0FCB12BA0813D00DD048A /* ErrorHandling.h */,
+				B4F0FCB22BA083B500DD048A /* ErrorHandling.m */,
+				B4F0FCB42BA0957300DD048A /* NetworkValidation.h */,
+				B4F0FCB52BA096D100DD048A /* NetworkValidation.m */,
+			);
+			name = "Util Classes";
+			sourceTree = "<group>";
+		};
+		B46877962BBEED40009A25D8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B46877AC2BBF18B1009A25D8 /* PrivacyInfo.xcprivacy */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		7EFEBBDB1C5AAF68005348AA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACA6B7AB25BE80CC0039CB4E /* StoreUIContolsData.h in Headers */,
+				ACDB7CE0252D815B006DDD02 /* KountAnalyticsViewController.h in Headers */,
+				ACDB7CED252D822A006DDD02 /* UIViewController+TouchControl.h in Headers */,
+				B40003FB2C3C336700B06626 /* KountUmbrella.h in Headers */,
+				ACDB7CDE252D815B006DDD02 /* PostPayloadKeys.h in Headers */,
+				7EFEBBDC1C5AAFCB005348AA /* KDataCollector.h in Headers */,
+				ACDB7CEC252D822A006DDD02 /* CustomWindow.h in Headers */,
+				ACDB7CEB252D822A006DDD02 /* UIControl+CustomControl.h in Headers */,
+				ACDB7CDF252D815B006DDD02 /* PostRequest.h in Headers */,
+				ACDB7CDD252D815B006DDD02 /* DeviceDataPayload.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		7E820E371C74F4D00029A8B6 /* KountDataCollectorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7E820E421C74F4D00029A8B6 /* Build configuration list for PBXNativeTarget "KountDataCollectorTests" */;
+			buildPhases = (
+				7E820E341C74F4D00029A8B6 /* Sources */,
+				7E820E351C74F4D00029A8B6 /* Frameworks */,
+				7E820E361C74F4D00029A8B6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7E820E3F1C74F4D00029A8B6 /* PBXTargetDependency */,
+			);
+			name = KountDataCollectorTests;
+			productName = KountDataCollectorTests;
+			productReference = 7E820E381C74F4D00029A8B6 /* KountDataCollectorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7EFEBB741C5A8122005348AA /* KountDataCollector */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7EFEBB7E1C5A8122005348AA /* Build configuration list for PBXNativeTarget "KountDataCollector" */;
+			buildPhases = (
+				7EFEBB711C5A8122005348AA /* Sources */,
+				7EFEBB721C5A8122005348AA /* Frameworks */,
+				7EFEBB731C5A8122005348AA /* CopyFiles */,
+				7EFEBBDB1C5AAF68005348AA /* Headers */,
+				B46877922BBEE84A009A25D8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KountDataCollector;
+			productName = MobileSDK;
+			productReference = 7EFEBB751C5A8122005348AA /* libKountDataCollector.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		F0B75C731F854DD800A6CB37 /* libKountDataCollector */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F0B75C7C1F854DD800A6CB37 /* Build configuration list for PBXNativeTarget "libKountDataCollector" */;
+			buildPhases = (
+				F0B75C701F854DD800A6CB37 /* Sources */,
+				F0B75C711F854DD800A6CB37 /* Frameworks */,
+				F0B75C721F854DD800A6CB37 /* CopyFiles */,
+				B46877942BBEE86D009A25D8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = libKountDataCollector;
+			productName = libKountDataCollector;
+			productReference = F0B75C741F854DD800A6CB37 /* liblibKountDataCollector.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7EFEBB6D1C5A8122005348AA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1500;
+				ORGANIZATIONNAME = "Kount Inc.";
+				TargetAttributes = {
+					7E820E371C74F4D00029A8B6 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					7E8390101C7D14F50094F7B7 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					7EFEBB741C5A8122005348AA = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					F0B75C731F854DD800A6CB37 = {
+						CreatedOnToolsVersion = 9.0;
+						DevelopmentTeam = 4QN2V4982H;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 7EFEBB701C5A8122005348AA /* Build configuration list for PBXProject "KountDataCollector" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				en,
+			);
+			mainGroup = 7EFEBB6C1C5A8122005348AA;
+			productRefGroup = 7EFEBB761C5A8122005348AA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7EFEBB741C5A8122005348AA /* KountDataCollector */,
+				7E820E371C74F4D00029A8B6 /* KountDataCollectorTests */,
+				7E8390101C7D14F50094F7B7 /* UniversalLibrary */,
+				F0B75C731F854DD800A6CB37 /* libKountDataCollector */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7E820E361C74F4D00029A8B6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B46877922BBEE84A009A25D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B46877AF2BBF18BD009A25D8 /* PrivacyInfo.xcprivacy in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B46877942BBEE86D009A25D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B46877B02BBF18C4009A25D8 /* PrivacyInfo.xcprivacy in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7E6D648C1C7E0CAE00289BDF /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# define output folder environment variable\nUNIVERSAL_OUTPUTFOLDER=${BUILD_DIR}/${CONFIGURATION}-universal\n\n# Step 1. Build Device and Simulator versions\nxcodebuild -target KountDataCollector OTHER_CFLAGS=\"-fembed-bitcode\" ONLY_ACTIVE_ARCH=NO ENABLE_BITCODE=NO -configuration ${CONFIGURATION} -sdk iphoneos  BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\"\nxcodebuild -target KountDataCollector ONLY_ACTIVE_ARCH=NO ENABLE_BITCODE=NO -configuration ${CONFIGURATION} -sdk iphonesimulator BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" EXCLUDED_ARCHS=\"arm64\"\n\n# make sure the output directory exists\nmkdir -p \"${UNIVERSAL_OUTPUTFOLDER}\"\n\n# Step 2. Create universal binary file using lipo\nlipo -create -output \"${UNIVERSAL_OUTPUTFOLDER}/lib${PROJECT_NAME}.a\" \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/lib${PROJECT_NAME}.a\" \"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/lib${PROJECT_NAME}.a\"\n\n# Last touch. copy the header files. Just for convenience\ncp -R \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/include\" \"${UNIVERSAL_OUTPUTFOLDER}/\"\n\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7E820E341C74F4D00029A8B6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E820E4E1C7623A60029A8B6 /* KDictionaryTests.m in Sources */,
+				7E8390071C7CE9F50094F7B7 /* KCollectorTaskBaseMock.m in Sources */,
+				7E8390041C7CE7F80094F7B7 /* KDataCollectorMock.m in Sources */,
+				7E8390001C7CCD040094F7B7 /* KLocationCollectorMock.m in Sources */,
+				62D128FE2B07E97F00DF086F /* PostPayloadKeys.m in Sources */,
+				7E838FFF1C7CCCFD0094F7B7 /* KFingerprintCollectorMock.m in Sources */,
+				62D128FF2B07E98200DF086F /* DeviceDataPayload.m in Sources */,
+				62D129002B07E98400DF086F /* PostRequest.m in Sources */,
+				7E820E481C76236D0029A8B6 /* KSystemCollectorTests.m in Sources */,
+				62D128FC2B07E97A00DF086F /* UIControl+CustomControl.m in Sources */,
+				62D128FB2B07E97700DF086F /* CustomWindow.m in Sources */,
+				7E820E441C7621430029A8B6 /* KFingerprintCollectorTests.m in Sources */,
+				7E820E501C7B9CCB0029A8B6 /* KCollectorTaskBaseTests.m in Sources */,
+				7E820E4C1C7623900029A8B6 /* KDataCollectorTests.m in Sources */,
+				7E820E461C76235D0029A8B6 /* KLocationCollectorTests.m in Sources */,
+				62D129012B07E98800DF086F /* KountAnalyticsViewController.m in Sources */,
+				62D129022B07E98A00DF086F /* StoreUIContolsData.m in Sources */,
+				62D128FD2B07E97C00DF086F /* UIViewController+TouchControl.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7EFEBB711C5A8122005348AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E820E311C73D3470029A8B6 /* KString.m in Sources */,
+				B4F0FCB32BA083B500DD048A /* ErrorHandling.m in Sources */,
+				ACDB7CDA252D815B006DDD02 /* KountAnalyticsViewController.m in Sources */,
+				B416E3C72B5EAFB700FC0D39 /* RegExValidation.m in Sources */,
+				7EFEBBC91C5A84F4005348AA /* KCollectorTaskBase.m in Sources */,
+				ACDB7CDB252D815B006DDD02 /* PostRequest.m in Sources */,
+				B43323102B9B7FA000C35B46 /* DebugMessages.m in Sources */,
+				B4F0FCB62BA096D100DD048A /* NetworkValidation.m in Sources */,
+				ACDB7CE9252D822A006DDD02 /* CustomWindow.m in Sources */,
+				7EFEBBC71C5A84F4005348AA /* KDataCollector.m in Sources */,
+				7E820E2D1C73CFEC0029A8B6 /* KDictionary.m in Sources */,
+				ACDB7CDC252D815B006DDD02 /* PostPayloadKeys.m in Sources */,
+				7EFEBBCB1C5A84F4005348AA /* KLocationCollector.m in Sources */,
+				7EFEBBCC1C5A84F4005348AA /* KFingerprintCollector.m in Sources */,
+				ACDB7CEE252D822A006DDD02 /* UIControl+CustomControl.m in Sources */,
+				ACDB7CE1252D815B006DDD02 /* DeviceDataPayload.m in Sources */,
+				7EFEBBCA1C5A84F4005348AA /* KSystemCollector.m in Sources */,
+				ACA6B7AC25BE80CC0039CB4E /* StoreUIContolsData.m in Sources */,
+				B4F0FCAF2B9F939000DD048A /* CompletionBlock.m in Sources */,
+				ACDB7CEA252D822A006DDD02 /* UIViewController+TouchControl.m in Sources */,
+				B45CD69D2BA0DAA5000E161D /* NetworkValidationMock.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0B75C701F854DD800A6CB37 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7E820E3F1C74F4D00029A8B6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7EFEBB741C5A8122005348AA /* KountDataCollector */;
+			targetProxy = 7E820E3E1C74F4D00029A8B6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		7E820E401C74F4D00029A8B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				COPY_PHASE_STRIP = YES;
+				DEVELOPMENT_TEAM = 62G3CSFCPV;
+				INFOPLIST_FILE = KountDataCollectorTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kount.KountDataCollectorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		7E820E411C74F4D00029A8B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				COPY_PHASE_STRIP = YES;
+				DEVELOPMENT_TEAM = 62G3CSFCPV;
+				INFOPLIST_FILE = KountDataCollectorTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kount.KountDataCollectorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		7E8390111C7D14F50094F7B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		7E8390121C7D14F50094F7B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		7EFEBB7C1C5A8122005348AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_NULLABLE_TO_NONNULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_REPEATED_USE_OF_WEAK = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "";
+				RUN_CLANG_STATIC_ANALYZER = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		7EFEBB7D1C5A8122005348AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_NULLABLE_TO_NONNULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_REPEATED_USE_OF_WEAK = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_CFLAGS = "";
+				RUN_CLANG_STATIC_ANALYZER = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7EFEBB7F1C5A8122005348AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEAD_CODE_STRIPPING = NO;
+				DEFINES_MODULE = YES;
+				EXCLUDED_ARCHS = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = KountDataCollector;
+				PUBLIC_HEADERS_FOLDER_PATH = "include/${PROJECT_NAME}";
+				SKIP_INSTALL = YES;
+				STRIP_STYLE = "non-global";
+			};
+			name = Debug;
+		};
+		7EFEBB801C5A8122005348AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEAD_CODE_STRIPPING = NO;
+				DEFINES_MODULE = YES;
+				EXCLUDED_ARCHS = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = KountDataCollector;
+				PUBLIC_HEADERS_FOLDER_PATH = "include/${PROJECT_NAME}";
+				SKIP_INSTALL = YES;
+				STRIP_STYLE = "non-global";
+			};
+			name = Release;
+		};
+		F0B75C7A1F854DD800A6CB37 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = YES;
+				DEVELOPMENT_TEAM = 4QN2V4982H;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F0B75C7B1F854DD800A6CB37 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = YES;
+				DEVELOPMENT_TEAM = 4QN2V4982H;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7E820E421C74F4D00029A8B6 /* Build configuration list for PBXNativeTarget "KountDataCollectorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E820E401C74F4D00029A8B6 /* Debug */,
+				7E820E411C74F4D00029A8B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7E8390131C7D14F50094F7B7 /* Build configuration list for PBXAggregateTarget "UniversalLibrary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E8390111C7D14F50094F7B7 /* Debug */,
+				7E8390121C7D14F50094F7B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7EFEBB701C5A8122005348AA /* Build configuration list for PBXProject "KountDataCollector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7EFEBB7C1C5A8122005348AA /* Debug */,
+				7EFEBB7D1C5A8122005348AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7EFEBB7E1C5A8122005348AA /* Build configuration list for PBXNativeTarget "KountDataCollector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7EFEBB7F1C5A8122005348AA /* Debug */,
+				7EFEBB801C5A8122005348AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F0B75C7C1F854DD800A6CB37 /* Build configuration list for PBXNativeTarget "libKountDataCollector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0B75C7A1F854DD800A6CB37 /* Debug */,
+				F0B75C7B1F854DD800A6CB37 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7EFEBB6D1C5A8122005348AA /* Project object */;
+}

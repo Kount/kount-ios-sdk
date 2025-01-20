@@ -1,0 +1,10 @@
+//
+//  build-arm64.xcconfig
+//  KountDataCollector
+//
+//  Created by Mario Espinoza on 14-08-23.
+//  Copyright © 2023 Kount Inc. All rights reserved.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974

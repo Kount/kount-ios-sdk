@@ -1,0 +1,62 @@
+/* 
+  Localizable.strings
+  SampleAppSwift
+
+  Created by Felipe Plaza on 22-11-23.
+  
+*/
+
+//MARK: General
+"start_button" = "START TEST";
+"stop_button" = "TEST STOPPEN";
+"back_button" = "Zurück";
+"change_language_title" = "Sprache ändern";
+
+//MARK: CoreMotion
+"loading_sensor_text" = "Sensoren laden";
+"core_motion_title" = "Kernbewegung";
+"core_motion_configuration" = "Sensor-Konfiguration";
+"accelerometer_title" = "Beschleunigungssensor";
+"gyro_title" = "Kreisel"; "gyro_title" = "Kreisel";
+"magnetometer_title" = "Magnetometer";
+"device_motion_title" = "Gerätebewegung";
+"Schrittzähler_Titel" = "Schrittzähler";
+"core_motion_data_title" = "Kernbewegungsdaten";
+"accelerometer_data_title" = "Beschleunigungssensor-Daten:";
+"gyro_data_title" = "Kreiseldaten:";
+"magnetometer_data_title" = "Magnetometer-Daten:";
+"device_motion_data_title" = "Bewegungsdaten des Geräts:";
+"pedometer_data_title" = "Schrittzählerdaten:";
+"Beschleunigung_x_text" = "Beschleunigung X: %@";
+"Beschleunigung_y_text" = "Beschleunigung Y: %@";
+"Beschleunigung_z_text" = "Beschleunigung Z: %@";
+"Beschleunigung_Position_text" = "Position: %@";
+"rotations_rate_x_text" = "Drehrate X: %@";
+"rotations_rate_y_text" = "Drehrate Y: %@";
+"rotation_rate_z_text" = "Drehrate Z: %@";
+"rotation_rate_position_text" = "Posición: %@";
+"magnetic_field_x_text" = "Magnetisches Feld X: %@";
+"magnetic_field_y_text" = "Magnetisches Feld Y: %@";
+"magnetic_field_z_text" = "Magnetisches Feld Z: %@";
+"attitude_title" = "Fluglagewinkel:";
+"lage_winkel_gier_text" = "Gier: %@";
+"lage_winkel_roll_text" = "Rollen: %@";
+"Neigungswinkel_Pitch_text" = "Neigung: %@";
+"Fluglage_Winkel_Kurs_Text" = "Kurs: %@";
+"gravity_title" = "Schwerkraft:";
+"gravity_x_text" = "X: %@";
+"gravity_y_text" = "Y: %@";
+"gravity_z_text" = "Z: %@";
+"pedometer_step_text" = "Schrittzähler: %d";
+"motion_state_text" = "Bewegungszustand: %@";
+"horizontal_position_text" = "Das Telefon befindet sich in horizontaler Position";
+"vertical_position_text" = "Das Telefon befindet sich in vertikaler Position";
+"tilted_position_text" = "Das Telefon befindet sich in einer geneigten Position";
+"landscape_position_text" = "Das Telefon befindet sich in der Querformatposition";
+"rotated_position_text" = "Das Telefon wird gedreht";
+"still_position_text" = "Das Telefon steht still";
+"motion_state_stationary_text" = "Bewegungszustand: Stationär";
+"motion_state_walking_text" = "Bewegungszustand: Gehend";
+"motion_state_running_text" = "Bewegungszustand: Laufend";
+"motion_state_automotive_text" = "Bewegungszustand: Kraftfahrzeug";
+"motion_state_cycling_text" = "Bewegungszustand: Radfahren";

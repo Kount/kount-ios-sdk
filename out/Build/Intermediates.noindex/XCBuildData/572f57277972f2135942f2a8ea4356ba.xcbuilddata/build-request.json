@@ -1,0 +1,64 @@
+{
+  "buildCommand" : {
+    "command" : "build",
+    "skipDependencies" : false,
+    "style" : "buildOnly"
+  },
+  "configuredTargets" : [
+    {
+      "guid" : "513e54d3b551b1807a37efb8eb98ff643054dc39ea148c13be99078999071584"
+    }
+  ],
+  "containerPath" : "/Users/ec2-user/builds/M_wdsDFR/0/kount/device/mobile/kount-ios-sdk-source/Library/KountDataCollector.xcodeproj",
+  "continueBuildingAfterErrors" : false,
+  "dependencyScope" : "workspace",
+  "enableIndexBuildArena" : false,
+  "hideShellScriptEnvironment" : false,
+  "parameters" : {
+    "action" : "build",
+    "activeArchitecture" : "x86_64",
+    "activeRunDestination" : {
+      "disableOnlyActiveArch" : false,
+      "platform" : "macosx",
+      "sdk" : "macosx14.5",
+      "sdkVariant" : "iosmac",
+      "supportedArchitectures" : [
+        "x86_64h",
+        "x86_64"
+      ],
+      "targetArchitecture" : "x86_64"
+    },
+    "arenaInfo" : {
+      "buildIntermediatesPath" : "/Users/ec2-user/builds/M_wdsDFR/0/kount/device/mobile/kount-ios-sdk-source/out/Build/Intermediates.noindex",
+      "buildProductsPath" : "/Users/ec2-user/builds/M_wdsDFR/0/kount/device/mobile/kount-ios-sdk-source/out/Build/Products",
+      "derivedDataPath" : "/Users/ec2-user/builds/M_wdsDFR/0/kount/device/mobile/kount-ios-sdk-source/out",
+      "indexDataStoreFolderPath" : "/Users/ec2-user/builds/M_wdsDFR/0/kount/device/mobile/kount-ios-sdk-source/out/Index.noindex/DataStore",
+      "indexEnableDataStore" : true,
+      "indexPCHPath" : "/Users/ec2-user/builds/M_wdsDFR/0/kount/device/mobile/kount-ios-sdk-source/out/Index.noindex/PrecompiledHeaders",
+      "pchPath" : "/Users/ec2-user/builds/M_wdsDFR/0/kount/device/mobile/kount-ios-sdk-source/out/Build/Intermediates.noindex/PrecompiledHeaders"
+    },
+    "configurationName" : "Release",
+    "overrides" : {
+      "commandLine" : {
+        "table" : {
+
+        }
+      },
+      "synthesized" : {
+        "table" : {
+          "ACTION" : "build",
+          "CLANG_COVERAGE_MAPPING" : "YES",
+          "CLANG_PROFILE_DATA_DIRECTORY" : "/Users/ec2-user/builds/M_wdsDFR/0/kount/device/mobile/kount-ios-sdk-source/out/Build/ProfileData",
+          "ENABLE_PREVIEWS" : "NO",
+          "ENABLE_XOJIT_PREVIEWS" : "NO"
+        }
+      }
+    }
+  },
+  "schemeCommand" : "launch",
+  "showNonLoggedProgress" : true,
+  "useDryRun" : false,
+  "useImplicitDependencies" : true,
+  "useLegacyBuildLocations" : false,
+  "useParallelTargets" : true
+}
