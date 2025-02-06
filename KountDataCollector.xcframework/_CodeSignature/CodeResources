@@ -26,7 +26,7 @@
 		</data>
 		<key>ios-arm64/libKountDataCollector.a</key>
 		<data>
-		R3AN8oZ5GBALBciQnRGamHm4s4U=
+		wZkNW1bhQSedaPrysG4QhNC9+4w=
 		</data>
 		<key>ios-arm64_x86_64-simulator/Headers/KDataCollector.h</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/libKountDataCollector.a</key>
 		<data>
-		2dcfeoj/Ini674jRgie3uWNegF4=
+		B1YHNfl7NEq2z2cRDQnsHty+cRI=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -114,11 +114,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			R3AN8oZ5GBALBciQnRGamHm4s4U=
+			wZkNW1bhQSedaPrysG4QhNC9+4w=
 			</data>
 			<key>hash2</key>
 			<data>
-			wXk5SyCH5pcWulHxLkrSIvwwk5/2DixkbVhHOc3zjgE=
+			2vzMzPWt9l63K5NknI2z3UyAKhdl/IcEG3theUBsCcw=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/Headers/KDataCollector.h</key>
@@ -180,11 +180,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			2dcfeoj/Ini674jRgie3uWNegF4=
+			B1YHNfl7NEq2z2cRDQnsHty+cRI=
 			</data>
 			<key>hash2</key>
 			<data>
-			dAzo1I7m5NbmK4rlK1zDxGT3LmX+m1/EMcrrcb8yMuU=
+			oMZRkE/8BH9r1QAcqBdVr7OOu6mLqGDYNCg2ggmjQCk=
 			</data>
 		</dict>
 	</dict>
