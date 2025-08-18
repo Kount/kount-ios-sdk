@@ -1,5 +1,5 @@
 import UIKit
-import KountDataCollector
+import KountSDK
 
 class ViewController: KountAnalyticsViewController, CheckoutViewControllerDelegate  {
 
@@ -9,12 +9,12 @@ class ViewController: KountAnalyticsViewController, CheckoutViewControllerDelega
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        merchant!.text = KDataCollector.shared().merchantID
+        merchant!.text = KDataCollector.shared.merchantID
         
-        switch KDataCollector.shared().environment {
-        case KEnvironment.test:
+        switch KDataCollector.shared.environment {
+        case KountEnvironment.test:
             environment!.text = "Test"
-        case KEnvironment.production:
+        case KountEnvironment.production:
             environment!.text = "Production"
         default:
             environment!.text = "Unknown"
@@ -31,7 +31,7 @@ class ViewController: KountAnalyticsViewController, CheckoutViewControllerDelega
             //To capture Analytics data starting from iOS version 13.0 or later, the modal presentation style should be fullscreen.
             navigationController.modalPresentationStyle = .fullScreen
             let controller :CheckoutViewController = navigationController.childViewControllers[0] as! CheckoutViewController
-            controller.delegate = self
+            controller.checkoutDelegate = self
         }
         
     }
