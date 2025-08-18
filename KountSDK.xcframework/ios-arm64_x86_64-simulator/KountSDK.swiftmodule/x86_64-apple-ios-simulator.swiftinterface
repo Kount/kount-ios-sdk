@@ -1,0 +1,427 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
+// swift-module-flags: -target x86_64-apple-ios18.2-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name KountSDK
+// swift-module-flags-ignorable:  -interface-compiler-version 6.1.2
+import CommonCrypto
+import CoreFoundation
+import CoreLocation
+import CoreMotion
+import Foundation
+import Network
+import QuartzCore
+import Swift
+import SystemConfiguration
+import UIKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+public struct TouchCoordinate {
+  public let timestamp: Swift.Int64
+  public let xCoordinate: Swift.Float
+  public let yCoordinate: Swift.Float
+  public init(timestamp: Swift.Int64, xCoordinate: Swift.Float, yCoordinate: Swift.Float)
+}
+public struct ButtonSession {
+  public let sessionId: Swift.String
+  public let title: Swift.String?
+  public let buttonType: UIKit.UIButton.ButtonType
+  public let tapBeginTimestamp: Swift.Int64
+  public let tapEndTimestamp: Swift.Int64
+  public let isLongPressed: Swift.Bool
+  public let coordinates: CoreFoundation.CGPoint
+  public let dimensions: CoreFoundation.CGSize
+  public init(sessionId: Swift.String, title: Swift.String?, buttonType: UIKit.UIButton.ButtonType, tapBeginTimestamp: Swift.Int64, tapEndTimestamp: Swift.Int64, isLongPressed: Swift.Bool, coordinates: CoreFoundation.CGPoint, dimensions: CoreFoundation.CGSize)
+}
+public struct SliderSession {
+  public let sessionId: Swift.String
+  public let startValue: Swift.Float
+  public let endValue: Swift.Float
+  public let startCoordinates: CoreFoundation.CGPoint
+  public let endCoordinates: CoreFoundation.CGPoint
+  public let dimensions: CoreFoundation.CGSize
+  public let timestamp: Swift.Int64
+  public init(sessionId: Swift.String, startValue: Swift.Float, endValue: Swift.Float, startCoordinates: CoreFoundation.CGPoint, endCoordinates: CoreFoundation.CGPoint, dimensions: CoreFoundation.CGSize, timestamp: Swift.Int64)
+}
+public protocol TouchEventHandling {
+  func handleTouchBegan(_ touches: Swift.Set<UIKit.UITouch>, event: UIKit.UIEvent?)
+  func handleTouchMoved(_ touches: Swift.Set<UIKit.UITouch>, event: UIKit.UIEvent?)
+  func handleTouchEnded(_ touches: Swift.Set<UIKit.UITouch>, event: UIKit.UIEvent?)
+}
+public protocol KountConfigurable {
+  var merchantId: Swift.String { get }
+  var sessionId: Swift.String { get }
+  var isDebugMode: Swift.Bool { get }
+}
+public protocol AnalyticsServicing {
+  func recordTouch(_ coordinate: KountSDK.TouchCoordinate)
+  func recordButtonSession(_ session: KountSDK.ButtonSession)
+  func recordSliderSession(_ session: KountSDK.SliderSession)
+  func startTracking()
+  func stopTracking()
+  func collectAndSubmit(completion: @escaping (Swift.Result<Swift.Void, any Swift.Error>) -> Swift.Void)
+}
+@objc public protocol KountAnalyticsDelegate {
+  @objc optional func analyticsDidCollectData(_ success: Swift.Bool, error: (any Swift.Error)?)
+  @objc optional func analyticsDidTrackEvent(_ eventType: Swift.String, success: Swift.Bool)
+}
+@objc public enum KDataCollectorStatus : Swift.Int {
+  case notStarted
+  case started
+  case completed
+  case failedWithError
+  case failedWithoutError
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers final public class KountAnalyticsTracker : ObjectiveC.NSObject, KountSDK.TouchEventHandling {
+  @objc public static let shared: KountSDK.KountAnalyticsTracker
+  @objc weak final public var delegate: (any KountSDK.KountAnalyticsDelegate)?
+  @objc final public var isDebugMode: Swift.Bool
+  @objc public static var appSessionID: Swift.String
+  @objc public static var logInEvents: [[Swift.String : Any]]
+  final public func configure(_ configuration: any KountSDK.KountConfigurable)
+  @objc final public func startAnalytics(merchantId: Swift.String, sessionId: Swift.String)
+  @objc final public func collectAndSubmit(completion: @escaping (Swift.Bool, (any Swift.Error)?) -> Swift.Void)
+  @objc final public func stopAnalytics()
+  @objc final public func register(viewController: UIKit.UIViewController)
+  @objc final public func collect(_ sessionID: Swift.String?, analyticsSwitch analyticsData: Swift.Bool, completion completionBlock: @escaping (Swift.String, Swift.Bool, (any Swift.Error)?) -> Swift.Void)
+  @objc final public func setEnvironmentForAnalytics(_ env: KountSDK.KountEnvironment)
+  @objc @_Concurrency.MainActor final public func storeLogInEvents(logInStatus: Swift.Bool)
+  @objc final public func getSessionID() -> Swift.String
+  @objc final public func getEpochTime() -> Swift.Int64
+  @objc final public class func getAppSessionID() -> Swift.String
+  @objc final public class func getKDataCollectionStatus() -> Swift.String?
+  @objc final public class func getKDataCollectionError() -> (any Swift.Error)?
+  @objc final public func getColorWellButtonType() -> Swift.String?
+  @objc final public class func setColorWellButtonType()
+  @objc final public func getDeviceData() -> [Swift.String : Any]
+  @objc final public func forceDataSubmission()
+  @objc final public func registerBackgroundTask()
+  @objc final public func processButtonEvents(_ events: [[Swift.String : Any]])
+  @objc final public func processSliderEvents(_ events: [[Swift.String : Any]])
+  @objc final public func processStepperEvents(_ events: [[Swift.String : Any]])
+  @objc final public func processPageControlEvents(_ events: [[Swift.String : Any]])
+  @objc final public func processImageViewEvents(_ events: [[Swift.String : Any]])
+  @objc final public func trackTouchBegan(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent?)
+  @objc final public func handleTouchBegan(_ touches: Swift.Set<UIKit.UITouch>, event: UIKit.UIEvent?)
+  @objc final public func handleTouchMoved(_ touches: Swift.Set<UIKit.UITouch>, event: UIKit.UIEvent?)
+  @objc final public func handleTouchEnded(_ touches: Swift.Set<UIKit.UITouch>, event: UIKit.UIEvent?)
+  @objc final public func trackTouchEnded(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent?)
+  @objc final public func trackTouchMoved(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent?)
+  @objc final public func handleScreenTouch(_ touch: UIKit.UITouch)
+  @objc final public func collectorDebugMessage(_ message: Swift.String)
+  @objc final public func trackScreenAppearance(viewControllerName: Swift.String?)
+  @objc final public func trackScreenDisappearance(viewControllerName: Swift.String?)
+  @_Concurrency.MainActor final public func trackEvent(_ event: KountSDK.AnalyticsEvent)
+  @objc final public func getInputSessions() -> [[Swift.String : Any]]
+  @objc final public func updateInputSessions(_ sessions: [[Swift.String : Any]])
+  @objc final public func getImageViewSessions() -> [[Swift.String : Any]]
+  @objc final public func updateImageViewSessions(_ sessions: [[Swift.String : Any]])
+  @objc final public func updateButtonSessions(_ sessions: [[Swift.String : Any]])
+  @objc final public func updateSliderSessions(_ sessions: [[Swift.String : Any]])
+  @objc final public func updateStepperSessions(_ sessions: [[Swift.String : Any]])
+  @objc final public func updatePageControlSessions(_ sessions: [[Swift.String : Any]])
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @objcMembers @_Concurrency.MainActor @preconcurrency open class KountAnalyticsViewController : UIKit.UIViewController, UIKit.UITextFieldDelegate, UIKit.UITextViewDelegate, UIKit.UISearchBarDelegate {
+  @objc @_Concurrency.MainActor @preconcurrency public static let shared: KountSDK.KountAnalyticsViewController
+  @objc @_Concurrency.MainActor @preconcurrency weak public var delegate: (any KountSDK.KountAnalyticsDelegate)? {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor @preconcurrency public var isDebugMode: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic open func viewDidLoad()
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic open func viewWillAppear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic open func viewDidAppear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic open func viewWillDisappear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic open func viewDidDisappear(_ animated: Swift.Bool)
+  @objc @_Concurrency.MainActor @preconcurrency public func collect(_ sessionID: Swift.String?, analyticsSwitch analyticsData: Swift.Bool, completion completionBlock: @escaping (Swift.String, Swift.Bool, (any Swift.Error)?) -> Swift.Void)
+  @objc @_Concurrency.MainActor @preconcurrency public func setEnvironmentForAnalytics(_ env: KountSDK.KountEnvironment)
+  @objc @_Concurrency.MainActor @preconcurrency public func storeLogInEvents(logInStatus: Swift.Bool)
+  @objc @_Concurrency.MainActor @preconcurrency public func getSessionID() -> Swift.String
+  @objc @_Concurrency.MainActor @preconcurrency public func getEpochTime() -> Swift.Int64
+  @objc @_Concurrency.MainActor @preconcurrency public class func getAppSessionID() -> Swift.String
+  @objc @_Concurrency.MainActor @preconcurrency public class func getKDataCollectionStatus() -> Swift.String?
+  @objc @_Concurrency.MainActor @preconcurrency public class func getKDataCollectionError() -> (any Swift.Error)?
+  @objc @_Concurrency.MainActor @preconcurrency public func getColorWellButtonType() -> Swift.String?
+  @objc @_Concurrency.MainActor @preconcurrency public class func setColorWellButtonType()
+  @objc @_Concurrency.MainActor @preconcurrency public func getDeviceData() -> [Swift.String : Any]
+  @objc @_Concurrency.MainActor @preconcurrency public func registerBackgroundTask()
+  @objc @_Concurrency.MainActor @preconcurrency public func collectorDebugMessage(_ message: Swift.String)
+  @_Concurrency.MainActor @preconcurrency @objc open func textFieldShouldBeginEditing(_ textField: UIKit.UITextField) -> Swift.Bool
+  @_Concurrency.MainActor @preconcurrency @objc open func textFieldDidBeginEditing(_ textField: UIKit.UITextField)
+  @_Concurrency.MainActor @preconcurrency @objc open func textFieldShouldEndEditing(_ textField: UIKit.UITextField) -> Swift.Bool
+  @_Concurrency.MainActor @preconcurrency @objc open func textFieldDidEndEditing(_ textField: UIKit.UITextField)
+  @_Concurrency.MainActor @preconcurrency @objc open func textField(_ textField: UIKit.UITextField, shouldChangeCharactersIn range: Foundation.NSRange, replacementString string: Swift.String) -> Swift.Bool
+  @_Concurrency.MainActor @preconcurrency @objc open func textFieldShouldClear(_ textField: UIKit.UITextField) -> Swift.Bool
+  @_Concurrency.MainActor @preconcurrency @objc open func textFieldShouldReturn(_ textField: UIKit.UITextField) -> Swift.Bool
+  @_Concurrency.MainActor @preconcurrency @objc open func textViewShouldBeginEditing(_ textView: UIKit.UITextView) -> Swift.Bool
+  @_Concurrency.MainActor @preconcurrency @objc open func textViewDidBeginEditing(_ textView: UIKit.UITextView)
+  @_Concurrency.MainActor @preconcurrency @objc open func textViewShouldEndEditing(_ textView: UIKit.UITextView) -> Swift.Bool
+  @_Concurrency.MainActor @preconcurrency @objc open func textViewDidEndEditing(_ textView: UIKit.UITextView)
+  @_Concurrency.MainActor @preconcurrency @objc open func textView(_ textView: UIKit.UITextView, shouldChangeTextIn range: Foundation.NSRange, replacementText text: Swift.String) -> Swift.Bool
+  @_Concurrency.MainActor @preconcurrency @objc open func searchBarShouldBeginEditing(_ searchBar: UIKit.UISearchBar) -> Swift.Bool
+  @_Concurrency.MainActor @preconcurrency @objc open func searchBarTextDidBeginEditing(_ searchBar: UIKit.UISearchBar)
+  @_Concurrency.MainActor @preconcurrency @objc open func searchBarShouldEndEditing(_ searchBar: UIKit.UISearchBar) -> Swift.Bool
+  @_Concurrency.MainActor @preconcurrency @objc open func searchBarTextDidEndEditing(_ searchBar: UIKit.UISearchBar)
+  @_Concurrency.MainActor @preconcurrency @objc open func searchBar(_ searchBar: UIKit.UISearchBar, shouldChangeTextIn range: Foundation.NSRange, replacementText text: Swift.String) -> Swift.Bool
+  @_Concurrency.MainActor @preconcurrency @objc open func searchBar(_ searchBar: UIKit.UISearchBar, textDidChange searchText: Swift.String)
+  @_Concurrency.MainActor @preconcurrency @objc open func searchBarSearchButtonClicked(_ searchBar: UIKit.UISearchBar)
+  @_Concurrency.MainActor @preconcurrency @objc open func searchBarCancelButtonClicked(_ searchBar: UIKit.UISearchBar)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic open func touchesBegan(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent?)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic open func touchesEnded(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent?)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic open func touchesMoved(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent?)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic open func touchesCancelled(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent?)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+public struct KDataCollectorKeys {
+  public struct Internal {
+    public static let merchantID: Swift.String
+    public static let sessionID: Swift.String
+    public static let sdkVersion: Swift.String
+    public static let sdkType: Swift.String
+    public static let mobileModel: Swift.String
+    public static let osVersion: Swift.String
+    public static let totalMemory: Swift.String
+    public static let locationLatitude: Swift.String
+    public static let locationLongitude: Swift.String
+    public static let locationDate: Swift.String
+    public static let localDateTimeEpoch: Swift.String
+    public static let timezoneCurrent: Swift.String
+    public static let timezoneAugust: Swift.String
+    public static let timezoneFebruary: Swift.String
+    public static let languageAndCountry: Swift.String
+    public static let screenDimensions: Swift.String
+    public static let deviceCookie: Swift.String
+    public static let oldDeviceCookie: Swift.String
+    public static let cookieUID: Swift.String
+    public static let vendorUID: Swift.String
+    public static let softErrors: Swift.String
+    public static let isJailbroken: Swift.String
+    public static let elapsed: Swift.String
+    public static let locationLatitudeElapsedTime: Swift.String
+    public static let locationLongitudeElapsedTime: Swift.String
+    public static let locationDateElapsedTime: Swift.String
+    public static let sdkVersionElapsedTime: Swift.String
+    public static let sdkTypeElapsedTime: Swift.String
+    public static let mobileModelElapsedTime: Swift.String
+    public static let merchantIDElapsedTime: Swift.String
+    public static let sessionIDElapsedTime: Swift.String
+    public static let osVersionElapsedTime: Swift.String
+    public static let deviceCookieElapsedTime: Swift.String
+    public static let oldDeviceCookieElapsedTime: Swift.String
+    public static let totalMemoryElapsedTime: Swift.String
+    public static let localDateTimeEpochElapsedTime: Swift.String
+    public static let timezoneAugustElapsedTime: Swift.String
+    public static let timezoneFebruaryElapsedTime: Swift.String
+    public static let timezoneCurrentElapsedTime: Swift.String
+    public static let languageAndCountryElapsedTime: Swift.String
+    public static let screenDimensionsElapsedTime: Swift.String
+    public static let systemCollectorElapsedTime: Swift.String
+    public static let fingerprintCollectorElapsedTime: Swift.String
+    public static let locationCollectorElapsedTime: Swift.String
+    public static let city: Swift.String
+    public static let state: Swift.String
+    public static let country: Swift.String
+    public static let isoCountryCode: Swift.String
+    public static let postalCode: Swift.String
+    public static let organization: Swift.String
+    public static let street: Swift.String
+    public static let reverseGeocodeElapsedTime: Swift.String
+  }
+  public struct CollectorName {
+    public static let location: Swift.String
+    public static let fingerprint: Swift.String
+    public static let system: Swift.String
+  }
+  public struct SoftError {
+    public static let passivelySkipped: Swift.String
+    public static let skipped: Swift.String
+    public static let unexpected: Swift.String
+    public static let serviceUnavailable: Swift.String
+    public static let permissionDenied: Swift.String
+    public static let timeout: Swift.String
+    public static let addressFieldsUnavailable: Swift.String
+    public static let addressNotCollected: Swift.String
+  }
+}
+@objc public enum TouchPhases : Swift.Int {
+  case began
+  case moved
+  case ended
+  case cancelled
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class TouchTrackingService : ObjectiveC.NSObject {
+  public static let shared: KountSDK.TouchTrackingService
+  @objc public func track(touches: Swift.Set<UIKit.UITouch>, event: UIKit.UIEvent?, phase: KountSDK.TouchPhases)
+  @objc deinit
+}
+@objc public enum KountEnvironment : Swift.Int {
+  case test
+  case production
+  public var formAnalyticsURL: Swift.String {
+    get
+  }
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public struct KDataCollectorConstants {
+  public static let errorDomain: Swift.String
+  public static let version: Swift.String
+  public static let mobileEndpoint: Swift.String
+  public static let emptyBody: Swift.String
+  public static let defaultTimeout: Swift.Int
+  public struct ErrorCode {
+    public static let unknown: Swift.Int
+    public static let nsError: Swift.Int
+    public static let timeout: Swift.Int
+    public static let badParameter: Swift.Int
+    public static let noNetwork: Swift.Int
+    public static let responseValidation: Swift.Int
+    public static let initializationError: Swift.Int
+  }
+  public struct ErrorMessage {
+    public static let sdkNotInitialized: Swift.String
+    public static let networkNotAvailable: Swift.String
+    public static let sessionIDFormat: Swift.String
+    public static let merchantIDFormat: Swift.String
+    public static let urlFormat: Swift.String
+    public static let timeout: Swift.String
+    public static let collectorsNotFinished: Swift.String
+    public static let cookieWriteFailed: Swift.String
+  }
+}
+public struct AnalyticsEvent {
+  public let eventType: Swift.String
+  public let timestamp: Swift.Int64
+  public let parameters: [Swift.String : Any]
+  public init(eventType: Swift.String, parameters: [Swift.String : Any] = [:])
+}
+@objc public enum LocationCollectorConfig : Swift.Int {
+  case skip
+  case passive
+  case requestPermission
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers final public class Kount : ObjectiveC.NSObject {
+  @objc public static let shared: KountSDK.Kount
+  @objc final public var debug: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc final public var merchantID: Swift.String {
+    @objc get
+    @objc set
+  }
+  @objc final public var environment: KountSDK.KountEnvironment {
+    @objc get
+    @objc set
+  }
+  @objc final public var locationCollectorConfig: KountSDK.LocationCollectorConfig {
+    @objc get
+    @objc set
+  }
+  @objc final public var timeoutInMS: Swift.Int {
+    @objc get
+    @objc set
+  }
+  @objc final public var deviceDataForAnalytics: [Swift.String : Any] {
+    @objc get
+  }
+  @objc final public func setDebugMode(_ debug: Swift.Bool)
+  @discardableResult
+  final public func configure(using configurator: (KountSDK.KountConfigurationBuilder) -> KountSDK.KountConfigurationBuilder) -> KountSDK.Kount
+  @objc final public func collectForSession(sessionID: Swift.String, completion: @escaping (Swift.String, Swift.Bool, (any Swift.Error)?) -> Swift.Void)
+  @objc final public func collect(_ sessionID: Swift.String?, analyticsSwitch analyticsData: Swift.Bool, completion: @escaping (Swift.String, Swift.Bool, (any Swift.Error)?) -> Swift.Void)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class KDataCollector : ObjectiveC.NSObject {
+  @objc public static var shared: KountSDK.KDataCollector {
+    @objc get
+  }
+  @objc public var debug: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc public var merchantID: Swift.String {
+    @objc get
+    @objc set
+  }
+  @objc public var environment: KountSDK.KountEnvironment {
+    @objc get
+    @objc set
+  }
+  @objc public var locationCollectorConfig: KountSDK.LocationCollectorConfig {
+    @objc get
+    @objc set
+  }
+  @objc public var timeoutInMS: Swift.Int {
+    @objc get
+    @objc set
+  }
+  @objc public var deviceDataForAnalytics: [Swift.String : Any] {
+    @objc get
+  }
+  @objc public func setDebugMode(_ debug: Swift.Bool)
+  @objc(setupEnvironment:) public func setEnvironment(_ environment: KountSDK.KountEnvironment)
+  public func configure(using configurator: (KountSDK.KountConfigurationBuilder) -> KountSDK.KountConfigurationBuilder)
+  @objc(configureWithMerchantID:environment:debug:) public func configure(merchantID: Swift.String, environment: KountSDK.KountEnvironment, debug: Swift.Bool)
+  @objc(configureWithMerchantID:environment:debug:locationConfig:timeout:) public func configure(merchantID: Swift.String, environment: KountSDK.KountEnvironment, debug: Swift.Bool, locationConfig: KountSDK.LocationCollectorConfig, timeout: Swift.Int)
+  @objc public func collectForSession(sessionID: Swift.String, completion: @escaping (Swift.String, Swift.Bool, (any Swift.Error)?) -> Swift.Void)
+  @objc override dynamic public init()
+  @objc deinit
+}
+public struct KountConfiguration {
+  public var merchantID: Swift.String
+  public var environment: KountSDK.KountEnvironment
+  public var locationCollectorConfig: KountSDK.LocationCollectorConfig
+  public var timeoutInMS: Swift.Int
+  public var debug: Swift.Bool
+  public init(merchantID: Swift.String, environment: KountSDK.KountEnvironment, locationCollectorConfig: KountSDK.LocationCollectorConfig, timeoutInMS: Swift.Int, debug: Swift.Bool)
+  public static let `default`: KountSDK.KountConfiguration
+}
+public class KountConfigurationBuilder {
+  public init(baseConfig: KountSDK.KountConfiguration = .default)
+  public func withMerchantID(_ merchantID: Swift.String) -> KountSDK.KountConfigurationBuilder
+  public func withEnvironment(_ environment: KountSDK.KountEnvironment) -> KountSDK.KountConfigurationBuilder
+  public func withLocationConfig(_ locationConfig: KountSDK.LocationCollectorConfig) -> KountSDK.KountConfigurationBuilder
+  public func withTimeout(_ timeoutInMS: Swift.Int) -> KountSDK.KountConfigurationBuilder
+  public func withDebugMode(_ debug: Swift.Bool) -> KountSDK.KountConfigurationBuilder
+  public func build() -> KountSDK.KountConfiguration
+  @objc deinit
+}
+public enum KAnalyticsConstants {
+  public static let viewControllerWillDisappearNotification: Foundation.Notification.Name
+}
+extension KountSDK.KDataCollectorStatus : Swift.Equatable {}
+extension KountSDK.KDataCollectorStatus : Swift.Hashable {}
+extension KountSDK.KDataCollectorStatus : Swift.RawRepresentable {}
+extension KountSDK.TouchPhases : Swift.Equatable {}
+extension KountSDK.TouchPhases : Swift.Hashable {}
+extension KountSDK.TouchPhases : Swift.RawRepresentable {}
+extension KountSDK.KountEnvironment : Swift.Equatable {}
+extension KountSDK.KountEnvironment : Swift.Hashable {}
+extension KountSDK.KountEnvironment : Swift.RawRepresentable {}
+extension KountSDK.LocationCollectorConfig : Swift.Equatable {}
+extension KountSDK.LocationCollectorConfig : Swift.Hashable {}
+extension KountSDK.LocationCollectorConfig : Swift.RawRepresentable {}
