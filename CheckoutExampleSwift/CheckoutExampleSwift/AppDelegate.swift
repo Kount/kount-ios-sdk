@@ -13,16 +13,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //
 //        sessionID = UUID().uuidString
 //        sessionID = sessionID.replacingOccurrences(of: "-", with: "")
-        KDataCollector.shared.debug = true
+        KDataCollector.shared().debug = true
         // TODO Set your Merchant ID
-        KDataCollector.shared.merchantID = "900900" // Insert your valid merchant ID
+        KDataCollector.shared().merchantID = "900900" // Insert your valid merchant ID
         // TODO Set the location collection configuration
-        KDataCollector.shared.locationCollectorConfig = LocationCollectorConfig.requestPermission
+        KDataCollector.shared().locationCollectorConfig = KLocationCollectorConfig.requestPermission
         // For a released app, you'll want to set this to KEnvironment.Production
-        KDataCollector.shared.environment = KountEnvironment.test
+        KDataCollector.shared().environment = KEnvironment.test
         // To collect Analytics Data, you'll want set this analyticsData to true or else false
         let analyticsData = true
-        KountAnalyticsViewController().setEnvironmentForAnalytics(KDataCollector.shared.environment)
+        KountAnalyticsViewController().setEnvironmentForAnalytics(KDataCollector.shared().environment)
         KountAnalyticsViewController().collect(sessionID, analyticsSwitch: analyticsData) {
             (sessionID, success, error) in
                 if (success) {

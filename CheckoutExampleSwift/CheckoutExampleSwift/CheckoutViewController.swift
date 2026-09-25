@@ -8,7 +8,7 @@ protocol CheckoutViewControllerDelegate: class {
 class CheckoutViewController: KountAnalyticsViewController {
     
     @IBOutlet weak var textView: UITextView?
-    weak var checkoutDelegate: CheckoutViewControllerDelegate?
+    weak var delegate:CheckoutViewControllerDelegate?
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
@@ -16,7 +16,7 @@ class CheckoutViewController: KountAnalyticsViewController {
         sessionID = sessionID.replacingOccurrences(of: "-", with: "")
         textView!.text = "Collection Starting\n\n"
         textView!.text = textView!.text.appendingFormat("Session ID:\n%@\n\n", sessionID)
-        KountAnalyticsViewController().collect(sessionID, analyticsSwitch: true) { (sessionID, success, error) in
+        KDataCollector.shared().collect(forSession: sessionID) { (sessionID, success, error) in
             if success {
                 self.textView!.text = self.textView!.text + "Collection Successful"
                 print(KountAnalyticsViewController.getKDataCollectionStatus() as Any)
@@ -28,9 +28,10 @@ class CheckoutViewController: KountAnalyticsViewController {
                 }
             }
         }
+        
     }
     
     @IBAction func done(_ sender: AnyObject) {
-        self.checkoutDelegate?.didFinish(self)
+        self.delegate?.didFinish(self)
     }
 }
