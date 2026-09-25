@@ -7,13 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5A39B1F32E538572009B59FE /* KountSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A39B1F22E538572009B59FE /* KountSDK.xcframework */; };
 		7E7826A61CDA4D120008C69A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E7826A51CDA4D120008C69A /* AppDelegate.swift */; };
 		7E7826A81CDA4D120008C69A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E7826A71CDA4D120008C69A /* ViewController.swift */; };
 		7E7826AB1CDA4D120008C69A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E7826A91CDA4D120008C69A /* Main.storyboard */; };
 		7E7826AD1CDA4D120008C69A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E7826AC1CDA4D120008C69A /* Assets.xcassets */; };
 		7E7826B01CDA4D120008C69A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E7826AE1CDA4D120008C69A /* LaunchScreen.storyboard */; };
 		7E7826B81CDA4DD30008C69A /* CheckoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E7826B71CDA4DD30008C69A /* CheckoutViewController.swift */; };
+		B44054753066E342005CC436 /* KountSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = B44054743066E342005CC436 /* KountSDK.xcframework */; };
+		B440547F3066E352005CC436 /* UIViewController+TouchControl.m in Sources */ = {isa = PBXBuildFile; fileRef = B440547D3066E352005CC436 /* UIViewController+TouchControl.m */; };
+		B44054803066E352005CC436 /* CustomWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = B44054793066E352005CC436 /* CustomWindow.m */; };
+		B44054813066E352005CC436 /* UIControl+CustomControl.m in Sources */ = {isa = PBXBuildFile; fileRef = B440547B3066E352005CC436 /* UIControl+CustomControl.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -30,7 +33,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		5A39B1F22E538572009B59FE /* KountSDK.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:62G3CSFCPV:Equifax Inc"; lastKnownFileType = wrapper.xcframework; name = KountSDK.xcframework; path = ../KountSDK.xcframework; sourceTree = SOURCE_ROOT; };
 		7E7826A21CDA4D120008C69A /* CheckoutExampleSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CheckoutExampleSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E7826A51CDA4D120008C69A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7E7826A71CDA4D120008C69A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -39,6 +41,13 @@
 		7E7826AF1CDA4D120008C69A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7E7826B11CDA4D120008C69A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7E7826B71CDA4DD30008C69A /* CheckoutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckoutViewController.swift; sourceTree = "<group>"; };
+		B44054743066E342005CC436 /* KountSDK.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:62G3CSFCPV:Equifax Inc"; lastKnownFileType = wrapper.xcframework; name = KountSDK.xcframework; path = ../KountSDK.xcframework; sourceTree = SOURCE_ROOT; };
+		B44054783066E352005CC436 /* CustomWindow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomWindow.h; sourceTree = "<group>"; };
+		B44054793066E352005CC436 /* CustomWindow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomWindow.m; sourceTree = "<group>"; };
+		B440547A3066E352005CC436 /* UIControl+CustomControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIControl+CustomControl.h"; sourceTree = "<group>"; };
+		B440547B3066E352005CC436 /* UIControl+CustomControl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIControl+CustomControl.m"; sourceTree = "<group>"; };
+		B440547C3066E352005CC436 /* UIViewController+TouchControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+TouchControl.h"; sourceTree = "<group>"; };
+		B440547D3066E352005CC436 /* UIViewController+TouchControl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+TouchControl.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,7 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5A39B1F32E538572009B59FE /* KountSDK.xcframework in Frameworks */,
+				B44054753066E342005CC436 /* KountSDK.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,7 +65,7 @@
 		7E7826991CDA4D120008C69A = {
 			isa = PBXGroup;
 			children = (
-				5A39B1F22E538572009B59FE /* KountSDK.xcframework */,
+				B44054743066E342005CC436 /* KountSDK.xcframework */,
 				7E7826A41CDA4D120008C69A /* CheckoutExampleSwift */,
 				7E7826A31CDA4D120008C69A /* Products */,
 				ACFE764525CA80D900825D2C /* Frameworks */,
@@ -74,6 +83,7 @@
 		7E7826A41CDA4D120008C69A /* CheckoutExampleSwift */ = {
 			isa = PBXGroup;
 			children = (
+				B440547E3066E352005CC436 /* TouchControls */,
 				7E7826A51CDA4D120008C69A /* AppDelegate.swift */,
 				7E7826A71CDA4D120008C69A /* ViewController.swift */,
 				7E7826B71CDA4DD30008C69A /* CheckoutViewController.swift */,
@@ -91,6 +101,20 @@
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
+		};
+		B440547E3066E352005CC436 /* TouchControls */ = {
+			isa = PBXGroup;
+			children = (
+				B44054783066E352005CC436 /* CustomWindow.h */,
+				B44054793066E352005CC436 /* CustomWindow.m */,
+				B440547A3066E352005CC436 /* UIControl+CustomControl.h */,
+				B440547B3066E352005CC436 /* UIControl+CustomControl.m */,
+				B440547C3066E352005CC436 /* UIViewController+TouchControl.h */,
+				B440547D3066E352005CC436 /* UIViewController+TouchControl.m */,
+			);
+			name = TouchControls;
+			path = ../KountSDKUniversalLibrary/TouchControls;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -167,6 +191,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B440547F3066E352005CC436 /* UIViewController+TouchControl.m in Sources */,
+				B44054803066E352005CC436 /* CustomWindow.m in Sources */,
+				B44054813066E352005CC436 /* UIControl+CustomControl.m in Sources */,
 				7E7826A81CDA4D120008C69A /* ViewController.swift in Sources */,
 				7E7826B81CDA4DD30008C69A /* CheckoutViewController.swift in Sources */,
 				7E7826A61CDA4D120008C69A /* AppDelegate.swift in Sources */,
