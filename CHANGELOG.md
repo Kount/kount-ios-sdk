@@ -104,8 +104,6 @@ Tested on the following iOS OS Versions:
   * 13.2
   * 13.2.3
 
-## 3.2
-=======
 ## 4.0.0
 
 Enhancements to the iOS SDK for Kount customers including:
@@ -127,7 +125,6 @@ Kount's iOS SDK 4.0.0 is compatible with:
   * 13.2.3
 
 ## 3.2 
->>>>>>> master
 
 * Resolved Failure to deallocate CLLocationManager
 * Resolved Invalid address exception in KCollectorTaskBase
