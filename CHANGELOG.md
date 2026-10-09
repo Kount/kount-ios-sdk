@@ -1,5 +1,12 @@
 # iOS SDK Release Notes
 
+## [6.0.1-beta.1] - 2026-10-07
+
+### Public Notes
+
+* Pre-release, not an official version.
+* Adds the SDK distribution channel (`spm`, `xcframework`, `cocoapods`, `universal_library`) to the device data POST (`dt`) and to the analytics JSON (`distribution`).
+
 ## [6.0.0] - 2026-08-12
 
 ### Public Notes
