@@ -1,5 +1,0 @@
-module KountSDK {
-    umbrella header "KountSDK.h"
-    requires ios
-    export *
-}

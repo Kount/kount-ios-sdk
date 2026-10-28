@@ -4,217 +4,37 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>ios-arm64/Headers/KDataCollector.h</key>
-		<data>
-		eYU8dCmZQy8EvtH25+KyioChjYE=
-		</data>
-		<key>ios-arm64/Headers/KountAnalyticsViewController.h</key>
-		<data>
-		uOL22l070iPkF5GUjsWTkKJ8Et0=
-		</data>
-		<key>ios-arm64/Headers/KountSDK.h</key>
-		<data>
-		nyldxCzfa6zn8iD62uSx6Oss5O4=
-		</data>
-		<key>ios-arm64/Headers/KountUmbrella.h</key>
-		<data>
-		2v12ujFrpQLpp3LsviSyeHv6zp0=
-		</data>
-		<key>ios-arm64/Headers/module.modulemap</key>
-		<data>
-		6XMy3DzqJu6lOSNJKBvFXtSQZZg=
-		</data>
-		<key>ios-arm64/PrivacyInfo.xcprivacy</key>
-		<data>
-		pGPCOm1V6JXOPl+fHvXI5LUqDwk=
-		</data>
 		<key>ios-arm64/libKountSDK.a</key>
 		<data>
-		8mMuCfu07HcQQk8dKkI6Tax65AM=
-		</data>
-		<key>ios-arm64_x86_64-simulator/Headers/KDataCollector.h</key>
-		<data>
-		eYU8dCmZQy8EvtH25+KyioChjYE=
-		</data>
-		<key>ios-arm64_x86_64-simulator/Headers/KountAnalyticsViewController.h</key>
-		<data>
-		uOL22l070iPkF5GUjsWTkKJ8Et0=
-		</data>
-		<key>ios-arm64_x86_64-simulator/Headers/KountSDK.h</key>
-		<data>
-		nyldxCzfa6zn8iD62uSx6Oss5O4=
-		</data>
-		<key>ios-arm64_x86_64-simulator/Headers/KountUmbrella.h</key>
-		<data>
-		2v12ujFrpQLpp3LsviSyeHv6zp0=
-		</data>
-		<key>ios-arm64_x86_64-simulator/Headers/module.modulemap</key>
-		<data>
-		6XMy3DzqJu6lOSNJKBvFXtSQZZg=
-		</data>
-		<key>ios-arm64_x86_64-simulator/PrivacyInfo.xcprivacy</key>
-		<data>
-		pGPCOm1V6JXOPl+fHvXI5LUqDwk=
+		RpOjXhh37zFDF5toqlMRJ9L8KEg=
 		</data>
 		<key>ios-arm64_x86_64-simulator/libKountSDK.a</key>
 		<data>
-		00QN+vwS1J9x63MFN+Afv6Ai+SA=
+		tqawoFo/2p95qA/jB9loi5D3SFo=
 		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>ios-arm64/Headers/KDataCollector.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			eYU8dCmZQy8EvtH25+KyioChjYE=
-			</data>
-			<key>hash2</key>
-			<data>
-			vcZhzLPhQoLZ5RzF6nctxyLjjx6lG77seQ3wcZFAltI=
-			</data>
-		</dict>
-		<key>ios-arm64/Headers/KountAnalyticsViewController.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			uOL22l070iPkF5GUjsWTkKJ8Et0=
-			</data>
-			<key>hash2</key>
-			<data>
-			14+cMH+H34ZcQbAzGtXHw8X19I2oJNQrtAYluWEbesc=
-			</data>
-		</dict>
-		<key>ios-arm64/Headers/KountSDK.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			nyldxCzfa6zn8iD62uSx6Oss5O4=
-			</data>
-			<key>hash2</key>
-			<data>
-			W3TYn+4MGz+omY5JNSYWMZhjFC/YsiYGAsEoZl/PCjA=
-			</data>
-		</dict>
-		<key>ios-arm64/Headers/KountUmbrella.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			2v12ujFrpQLpp3LsviSyeHv6zp0=
-			</data>
-			<key>hash2</key>
-			<data>
-			r+gK0O/rdfxiqna366KivHqPuEFg4zj6rPOQlDnYSe4=
-			</data>
-		</dict>
-		<key>ios-arm64/Headers/module.modulemap</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			6XMy3DzqJu6lOSNJKBvFXtSQZZg=
-			</data>
-			<key>hash2</key>
-			<data>
-			Riy5lSj+6lfYC73aT9tNfspk8GceDrzcQiYEAHdN2Zg=
-			</data>
-		</dict>
-		<key>ios-arm64/PrivacyInfo.xcprivacy</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			pGPCOm1V6JXOPl+fHvXI5LUqDwk=
-			</data>
-			<key>hash2</key>
-			<data>
-			ZnXhKxJ+0m719fl5VqR3mMKcBHAnDhPyKnbBAOUJ+o0=
-			</data>
-		</dict>
 		<key>ios-arm64/libKountSDK.a</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			8mMuCfu07HcQQk8dKkI6Tax65AM=
+			RpOjXhh37zFDF5toqlMRJ9L8KEg=
 			</data>
 			<key>hash2</key>
 			<data>
-			MHVBveLmpaV7x91tjOq8c2xpeb5T42LI7ckhT0o5LSI=
-			</data>
-		</dict>
-		<key>ios-arm64_x86_64-simulator/Headers/KDataCollector.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			eYU8dCmZQy8EvtH25+KyioChjYE=
-			</data>
-			<key>hash2</key>
-			<data>
-			vcZhzLPhQoLZ5RzF6nctxyLjjx6lG77seQ3wcZFAltI=
-			</data>
-		</dict>
-		<key>ios-arm64_x86_64-simulator/Headers/KountAnalyticsViewController.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			uOL22l070iPkF5GUjsWTkKJ8Et0=
-			</data>
-			<key>hash2</key>
-			<data>
-			14+cMH+H34ZcQbAzGtXHw8X19I2oJNQrtAYluWEbesc=
-			</data>
-		</dict>
-		<key>ios-arm64_x86_64-simulator/Headers/KountSDK.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			nyldxCzfa6zn8iD62uSx6Oss5O4=
-			</data>
-			<key>hash2</key>
-			<data>
-			W3TYn+4MGz+omY5JNSYWMZhjFC/YsiYGAsEoZl/PCjA=
-			</data>
-		</dict>
-		<key>ios-arm64_x86_64-simulator/Headers/KountUmbrella.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			2v12ujFrpQLpp3LsviSyeHv6zp0=
-			</data>
-			<key>hash2</key>
-			<data>
-			r+gK0O/rdfxiqna366KivHqPuEFg4zj6rPOQlDnYSe4=
-			</data>
-		</dict>
-		<key>ios-arm64_x86_64-simulator/Headers/module.modulemap</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			6XMy3DzqJu6lOSNJKBvFXtSQZZg=
-			</data>
-			<key>hash2</key>
-			<data>
-			Riy5lSj+6lfYC73aT9tNfspk8GceDrzcQiYEAHdN2Zg=
-			</data>
-		</dict>
-		<key>ios-arm64_x86_64-simulator/PrivacyInfo.xcprivacy</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			pGPCOm1V6JXOPl+fHvXI5LUqDwk=
-			</data>
-			<key>hash2</key>
-			<data>
-			ZnXhKxJ+0m719fl5VqR3mMKcBHAnDhPyKnbBAOUJ+o0=
+			fT+/Ki4Fg8jza1ONsnbX298ABEY3et5zA4zmMaLXrcs=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/libKountSDK.a</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			00QN+vwS1J9x63MFN+Afv6Ai+SA=
+			tqawoFo/2p95qA/jB9loi5D3SFo=
 			</data>
 			<key>hash2</key>
 			<data>
-			IKnAeTHI5H7H2ItlsLS79lNh7dzUEgT8J2HXp5olt5M=
+			gRLSSeletcDVg0dBV5po+2U2MqafdAU8ihP+m2YN5Zc=
 			</data>
 		</dict>
 	</dict>
