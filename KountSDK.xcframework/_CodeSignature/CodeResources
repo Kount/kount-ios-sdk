@@ -18,7 +18,7 @@
 		</data>
 		<key>ios-arm64/Headers/KountUmbrella.h</key>
 		<data>
-		2v12ujFrpQLpp3LsviSyeHv6zp0=
+		8D6EmHmB6q/7I0TTasIB1OrjXtI=
 		</data>
 		<key>ios-arm64/Headers/module.modulemap</key>
 		<data>
@@ -30,7 +30,7 @@
 		</data>
 		<key>ios-arm64/libKountSDK.a</key>
 		<data>
-		8mMuCfu07HcQQk8dKkI6Tax65AM=
+		k5ZiT07fyDzzG4PU0MDHP5HK8jo=
 		</data>
 		<key>ios-arm64_x86_64-simulator/Headers/KDataCollector.h</key>
 		<data>
@@ -46,7 +46,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/Headers/KountUmbrella.h</key>
 		<data>
-		2v12ujFrpQLpp3LsviSyeHv6zp0=
+		8D6EmHmB6q/7I0TTasIB1OrjXtI=
 		</data>
 		<key>ios-arm64_x86_64-simulator/Headers/module.modulemap</key>
 		<data>
@@ -58,7 +58,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/libKountSDK.a</key>
 		<data>
-		00QN+vwS1J9x63MFN+Afv6Ai+SA=
+		Lk8LMMvyyTTobFtPpc1FlZSz6Vw=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -100,11 +100,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			2v12ujFrpQLpp3LsviSyeHv6zp0=
+			8D6EmHmB6q/7I0TTasIB1OrjXtI=
 			</data>
 			<key>hash2</key>
 			<data>
-			r+gK0O/rdfxiqna366KivHqPuEFg4zj6rPOQlDnYSe4=
+			7UJ00sKN2a0sffbE2gb7tTo68gkhcyc35IjWyGetdY0=
 			</data>
 		</dict>
 		<key>ios-arm64/Headers/module.modulemap</key>
@@ -133,11 +133,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			8mMuCfu07HcQQk8dKkI6Tax65AM=
+			k5ZiT07fyDzzG4PU0MDHP5HK8jo=
 			</data>
 			<key>hash2</key>
 			<data>
-			MHVBveLmpaV7x91tjOq8c2xpeb5T42LI7ckhT0o5LSI=
+			dR9NsBIYjl4101F4FK0qXKiNV43R+IUZoqLj0N3/2J8=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/Headers/KDataCollector.h</key>
@@ -177,11 +177,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			2v12ujFrpQLpp3LsviSyeHv6zp0=
+			8D6EmHmB6q/7I0TTasIB1OrjXtI=
 			</data>
 			<key>hash2</key>
 			<data>
-			r+gK0O/rdfxiqna366KivHqPuEFg4zj6rPOQlDnYSe4=
+			7UJ00sKN2a0sffbE2gb7tTo68gkhcyc35IjWyGetdY0=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/Headers/module.modulemap</key>
@@ -210,11 +210,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			00QN+vwS1J9x63MFN+Afv6Ai+SA=
+			Lk8LMMvyyTTobFtPpc1FlZSz6Vw=
 			</data>
 			<key>hash2</key>
 			<data>
-			IKnAeTHI5H7H2ItlsLS79lNh7dzUEgT8J2HXp5olt5M=
+			oxsP8nh2UzW3+/XudRLKCmXg8ko8T5YlZSh+VOMGtr0=
 			</data>
 		</dict>
 	</dict>
